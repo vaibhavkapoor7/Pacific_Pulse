@@ -41,6 +41,7 @@
         display: flex;
         margin-right: 10px;
         gap: 20px;
+        min-width: 100%;
       }
 
       .nav-bar ul {
@@ -103,6 +104,50 @@
         margin-right: 40px;
       }
 
+  /* ===  STYLING THE NEWSLETTER SECTION  === */
+  .newsletter-section {
+    background-color: var(--lgt-cream);
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .newsletter-section h3 {
+    font-family: 'antarctican-headline', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .newsletter-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .newsletter-section input[type="email"] {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid black;
+    width: 300px;
+    max-width: 80%;
+  }
+
+  .newsletter-section button {
+    background-color: var(--drk-green);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .newsletter-section button:hover {
+    background-color: white;
+    color: var(--drk-green);
+  }
+      
   /* ===  STYLING THE FOOTER  === */
   footer {
     margin-top: auto;
