@@ -1,12 +1,12 @@
 :root {
-    /* ====== RESET ====== */
+    /* ====== ROOT RESET ====== */
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
 
-    /* ====== COLORS ====== */
+    /* ====== ROOT COLORS ====== */
     --lgt-cream: #F5EBD8;
     --drk-green: #545B37;
     --blue: #43859C;
@@ -14,10 +14,11 @@
     --orange: #DC9364;
     --lgt-green: #B0BBA2;
 
+
     /* ====== STYLES ====== */
       header {
         background-color: var(--lgt-cream);
-        height: 102px;
+        height: 180px;
         color: black;
         display: flex;
         align-items: center;
@@ -26,8 +27,76 @@
         text-align: center;
         position: sticky;
         top: 0;
-        
+    
       }
-      
+
+    /* ===  STYLING THE NAV BAR  === */
+
+      .logo img {
+        height: 450px;
+        margin-left: 20px;
+      }
+
+      .nav-bar {
+        display: flex;
+        margin-right: 90px;
+        gap: 30px;
+      }
+
+      .nav-bar ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin-right: 50px;
+      }
+
+      .nav-bar a {
+        color: black;
+        font-family: "antarctican-headline", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 44px;
+        text-align: left;
+      }
+
+      nav .login {
+        position: relative;
+        border-radius: 15px;
+        border: none;
+        background-color: var(--blue);
+        width: 200px;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 54px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Antarctican Headline', sans-serif;
+      }
+
+      nav .tickets {
+        position: relative;
+        border-radius: 15px;
+        border: none;
+        background-color: var(--drk-green);
+        width: 300px;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 54px;
+        font-weight: 600;
+        color: #fff;
+        font-family: 'Antarctican Headline', sans-serif;
+        padding: 5px;
+      }
+
 
 }
