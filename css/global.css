@@ -167,14 +167,14 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer-column h3 {
   text-decoration: underline;
   font-family: 'antarctican-headline', sans-serif;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
   color: black;
 }
 
@@ -190,12 +190,15 @@
 .footer-column a {
   color: black;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .footer-column a:hover {
   color: var(--drk-green);
+  text-decoration: underline;
+  cursor:pointer;
 }
 
 /* --- STYLING SOCIAL ICONS  --- */
@@ -212,7 +215,7 @@
 }
 
 .social-icons a:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: var(--drk-green);
 }
 
@@ -228,6 +231,7 @@
 .copyright {
   text-align: center;
   font-size: 0.9rem;
+  font-weight: bold;
 }
 
 /* --- ADDING RESPONSIVE ABILITY  --- */
