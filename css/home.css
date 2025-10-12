@@ -52,7 +52,6 @@
     object-fit: contain;
     align-self: center;
 }
-
 /* ---  STYLING FOR ABOUT SECTION  --- */
 .about {
     font-family: var(--antartican);
@@ -69,7 +68,6 @@
     font-weight: 500;
     padding-top: 1rem;
 }
-
 /* ---  STYLING FOR LINEUP SECTION  --- */
 .lineup {
     background-color: var(--lgt-cream);
@@ -100,7 +98,6 @@
 .lineup .see-full-lineup:hover {
     opacity: 85%;
 }
-
 /* --- STYLING FOR ARTIST CARD --- */
 /* TODO: add styling for mobile versions */
 .artist-card {
@@ -205,9 +202,39 @@
   line-height: 1.6;
   max-width: 90%;
 }
+.experiences {
+    background-color: var(--orange);
+    padding: 2.5rem 4rem;
+}
+.experiences .experiences-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.experiences .experiences-text .see-more-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--antartican);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.experiences .experiences-text .see-more-btn:hover {
+    opacity: 90%;
+}
+.experiences .section-title {
+    font-size: 4.5rem;
+    font-family: var(--fisterra);
+    color: white;
+    margin-bottom: 0.5rem;
+}
 
-
-
+.information {
+    background-color: white;
+}
 
 
 
