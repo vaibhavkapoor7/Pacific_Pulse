@@ -6,13 +6,15 @@
         box-sizing: border-box;
       }
 
-    /* ====== ROOT COLORS ====== */
+    /* ====== ROOT COLORS & FONTS ====== */
     --lgt-cream: #F5EBD8;
     --drk-green: #545B37;
     --blue: #43859C;
     --yellow: #EFC152;
     --orange: #DC9364;
     --lgt-green: #B0BBA2;
+    --fisterra: "fisterra-morte", sans-serif;
+    --antartican: "antarctican-headline", sans-serif;
 
 
     /* ====== HEADER ====== */
@@ -105,7 +107,7 @@
   }
 
   .newsletter-section h3 {
-    font-family: 'antarctican-headline', sans-serif;
+    font-family: var(--antartican);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
@@ -146,7 +148,7 @@
   background-color: var(--yellow);
   color: black;
   padding: 4rem 2rem 2rem;
-  font-family: "antarctican-headline", sans-serif;
+  font-family: var(--antartican);
   margin-top: auto;
 }
 
@@ -165,7 +167,7 @@
 
 .footer-column h3 {
   text-decoration: underline;
-  font-family: 'antarctican-headline', sans-serif;
+  font-family: var(--antartican);
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: black;

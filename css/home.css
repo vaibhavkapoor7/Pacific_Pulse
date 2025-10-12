@@ -22,7 +22,7 @@
 
 
 
-
+/* --- ANIMATIONS  --- */
 @keyframes scroll-left {
     0% {
         transform: translateX(100%);
