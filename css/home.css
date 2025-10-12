@@ -54,13 +54,12 @@
 }
 
 /* ---  STYLING FOR ABOUT SECTION  --- */
-
 .about {
     font-family: var(--antartican);
-    text-align: right;
+    text-align: right; /* Aligns the text to the right side*/
     background-color: var(--drk-green);
     color: white;
-    padding: 2.5rem 4rem;
+    padding: 2.5rem 4rem; /* Adds some space between the the text and border section */
 }
 .about h2 {
     font-size: 3rem;
@@ -71,27 +70,140 @@
     padding-top: 1rem;
 }
 
-/* --- STYLING FOR TAGS --- */
-.lineup .card span {
-    appearance: none;
+/* ---  STYLING FOR LINEUP SECTION  --- */
+.lineup {
+    background-color: var(--lgt-cream);
+    padding: 2.5rem 4rem;
+}
+.lineup h2 {
+    font-family: var(--fisterra);
+    color: var(--drk-green);
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+.lineup .lineup-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lineup .see-full-lineup {
+    padding: 0.5rem 1rem;
+    background-color: var(--blue);
+    color: white;
     border: none;
-    outline: none;
-    color: black;
+    border-radius: 5px;
+    cursor: pointer;
     font-family: var(--antartican);
-    padding: 4px 10px;
-    border-radius: 8px;
-    font-size: 18px;
-    line-height: 1.2;
-    display: inline-block;
-    /* todo: add margin in */
-    text-decoration: none;
-    white-space: nowrap;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.lineup .card span.time {
-    background-color: var(--yellow);
+.lineup .see-full-lineup:hover {
+    opacity: 85%;
 }
-.lineup .card span.stage {
-    background-color: var(--lgt-green);
+
+/* --- STYLING FOR ARTIST CARD --- */
+/* TODO: add styling for mobile versions */
+.artist-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid #1c1c1c;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 680px;
+  height: 355px;
+  box-shadow: 2px 2px 0 #1c1c1c;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.artist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 6px 0 black;
+}
+.artist-image {
+  width: 240px;
+  height: 300px;
+  border-radius: 1rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+/* === Right-side text layout === */
+.artist-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* Top row (date + icon) */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+.artist-date {
+  font-family: "antarctican-headline", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1c1c1c;
+}
+/* Calendar icon button */
+.calendar-icon {
+  background-color: #f8d79a;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.calendar-icon:hover {
+  background-color: #dc9364;
+  color: black;
+}
+/* Artist name */
+.artist-name {
+  font-family: var(--fisterra);
+  font-size: 2.2rem;
+  color: var(--drk-green);
+  margin: 0.25rem 0 0.75rem 0;
+}
+/* Time & Stage Tags */
+.artist-tags {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.tag {
+  font-family: "antarctican-headline", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.tag.time {
+  background-color: var(--yellow);
+  color: black;
+}
+.tag.stage {
+  background-color: var(--drk-green);
+  color: white;
+}
+/* Artist Bio */
+.artist-bio {
+  font-family: "antarctican-headline", sans-serif;
+  font-size: 1rem;
+  color: #1c1c1c;
+  line-height: 1.6;
+  max-width: 90%;
 }
 
 

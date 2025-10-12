@@ -39,9 +39,7 @@
           <span>This is test THREE!</span>
         </div>
     </div>
-<!-- 
-  This is where the main part of the page starts and the header ends    
--->
+    <!-- Where the lineup cards section starts -->
       <section class="info">
         <div class="info-text">
           <h1>PACIFIC PULSE</h1>
@@ -63,23 +61,35 @@
       </section>
       
       <section class="lineup">
-        <h2>LINEUP</h2>
-        <button>SEE FULL LINEUP</button>
-
-
-        <!-- Cards for the featured artists -->
-        <div class="card">
-          <img src="../images/carter-white.png" alt="Carter White Promo">
-          <p class="date">August 21st, 2026</p>
-          <i class="fa-regular fa-calendar-plus"></i>
-          <h3>CARTER WHITE</h3>
-          <span class="time">07:00 PM</span>
-          <span class="stage">MAIN STAGE</span>
-          <!-- TODO: turn the ^ buttons into tags -->
-           <p class="bio">At 30 years old, Carter White has become one of the freshest faces of modern country. Known for heartfelt ballads and high-energy charisma, he blends traditional southern twang with contemporary storytelling.</p>
-          <a href="#">Read More</a> <!-- Only need to have this for cards who's bio is too long-->
-          
+        <div class="lineup-text">
+          <h2>LINEUP</h2>
+          <button class="see-full-lineup">SEE FULL LINEUP <i class="fa-solid fa-arrow-right"></i></button>
         </div>
+
+      <div class="artist-card">
+        <img src="../images/carter-white.png" alt="Carter White" class="artist-image">
+
+        <div class="artist-info">
+          <div class="top-row">
+            <p class="artist-date">August 21st, 2026</p>
+            <button class="calendar-icon" title="Add to calendar">
+              <i class="fa-solid fa-calendar-plus add-calendar"></i>
+            </button>
+          </div>
+
+          <h3 class="artist-name">CARTER WHITE</h3>
+
+          <div class="artist-tags">
+            <span class="tag time">07:00 PM</span>
+            <span class="tag stage">MAIN STAGE</span>
+          </div>
+
+          <p class="artist-bio">
+            At 30 years old, Carter White has become one of the freshest faces of modern country. Known for heartfelt ballads and high-energy stage charisma, he blends traditional southern twang with contemporary storytelling.
+          </p>
+        </div>
+      </div>
+      
 
 
       </section>
