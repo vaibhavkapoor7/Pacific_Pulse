@@ -1,3 +1,4 @@
+/* --- STYLING FOR TICKER BAR  --- */
 .ticker-container {
     width: 100%;
     overflow: hidden;
@@ -5,16 +6,77 @@
     padding: 10px;
     white-space: nowrap;
 }
-
 .ticker-content {
     display: inline-block;
     animation: scroll-left 15s linear infinite;
+    font-family: var(--antartican);
+    font-weight: bold;
 }
-
 .ticker-content span {
     padding-right: 380px;
 }
 
+/* --- STYLING FOR INFO SECTION --- */
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lgt-cream);
+    padding: 2rem 4rem;
+    gap: 4rem;
+}
+/* ---  LEFT TEXT COLUMN  --- */
+.info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+
+.info-text h1 {
+    font-family: var(--fisterra);
+    font-size: 5rem;
+    color: var(--drk-green);
+    margin-bottom: 0.5rem;
+}
+.info-text p {
+    font-family: var(--antartican);
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+.info img {
+    width: 320px;
+    height: auto;
+    object-fit: contain;
+    align-self: center;
+}
+
+/* --- STYLING FOR TAGS --- */
+.lineup .card span {
+    appearance: none;
+    border: none;
+    outline: none;
+    color: black;
+    font-family: var(--antartican);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 1.2;
+    display: inline-block;
+    /* todo: add margin in */
+    text-decoration: none;
+    white-space: nowrap;
+}
+.lineup .card span.time {
+    background-color: var(--yellow);
+}
+.lineup .card span.stage {
+    background-color: var(--lgt-green);
+}
 
 
 
