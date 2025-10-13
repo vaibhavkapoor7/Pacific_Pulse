@@ -1,3 +1,188 @@
+/* ------- CONTAINER ------- */
+.page {
+    max-width: 100%;
+}
+/* ------- HERO ------- */
+.hero {
+    background: var(--drk-green);
+    margin: 0%;
+    padding: 64px 40px 72px;
+    width: 100%;
+}
 
+.hero h1 {
+    margin: 0 0 16px;
+    font-family: var(--fisterra), serif;
+    font-size: clamp(2.6rem, 4.6vw, 3.75rem);
+    line-height: 1.02;
+    letter-spacing: .5px;
+    background-color: var(--drk-green);
+    color: var(--lgt-cream);
+}
 
+.hero p {
+    margin: 0;
+    max-width: 75ch;
+    color: var(--lgt-cream);
+    font-size: clamp(1rem, 1.2vw + .6rem, 1.125rem);
+}
 
+/* ------- SECTION TITLE ------- */
+.section {
+    padding: 0 0 64px;
+    background-color: var(--lgt-cream);
+    border-bottom:4px solid var(--drk-green)
+}
+
+.section>h2 {
+    padding: 30px;
+    text-align: center;
+    font-family: var(--fisterra), serif;
+    color: var(--drk-green);
+    font-size: clamp(1.9rem, 2.7vw, 2.5rem);
+    letter-spacing: .4px;
+      ;
+}
+
+/* ------- GRID ------- */
+.grid {
+    display: flex;
+    justify-self: center;
+    max-width: 1000px;
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    background-color: var(--lgt-cream);
+}
+
+@media (max-width:980px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ------- CARD ------- */
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 2px solid color-mix(in srgb, var(--lgt-green) 60%, black 0%);
+    border-radius: 10px;
+    padding: 24px 18px 18px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+}
+
+.card:hover {
+    box-shadow: 0 10px 22px rgba(0, 0, 0, .10);
+}
+
+/* Title with inline price right after the day text */
+.card-title {
+    margin: 0 0 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    color: var(--drk-green);
+    font-family: var(--antartican), sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    font-size: 1.1rem;
+}
+
+.card-title .price {
+    display: inline-block;
+    line-height: 1;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: var(--drk-green);
+    color: #fff;
+    font-weight: 800;
+    font-size: .95rem;
+}
+
+/* Copy list (no bullets) */
+.list {
+    list-style: none;
+    margin: 8px 0 14px;
+    padding: 0;
+    flex: 1 1 auto;
+}
+
+.list li {
+    margin: 10px 0;
+    line-height: 1.45;
+    color: var(--drk-green);
+}
+
+/* Qty + CTA */
+.qty-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.qty {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff;
+    border: 1.5px solid color-mix(in srgb, var(--lgt-green) 55%, black 0%);
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+.qty span {
+    color: var(--drk-green);
+    font-family: var(--antartican), sans-serif;
+    font-weight: 800;
+}
+
+.qty input {
+    width: 56px;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    font-weight: 800;
+    color: var(--drk-green);
+    background: transparent;
+}
+
+/* CTA button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn.btn--primary {
+    background: color-mix(in srgb, var(--orange) 85%, white 15%);
+    color: #2b1511;
+    border: 0;
+    border-radius: 999px;
+    padding: 12px 18px;
+    font-weight: 900;
+    font-family: var(--antartican), sans-serif;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, .12);
+    transition: filter .15s ease, transform .05s ease, background-color .2s ease;
+}
+
+.btn.btn--primary:hover {
+    background: var(--blue);
+    color: #fff;
+}
+
+.btn.btn--primary:active {
+    transform: translateY(1px);
+}

@@ -1,162 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pacific pulse</title>
-  <link rel="stylesheet" href="../CSS/tickets.css">
-  <link rel="stylesheet" href="../CSS/global.css">
-
-</head>
-
-<body>
-  <header>
-    <div class="logo">
-      <img src="../images/Logo.png" alt="Pacific Pulse Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="lineup.html">Line up</a></li>
-        <li><a href="tickets.html">Tickets</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><button> Buy Tickets</button></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="page">
-    <div>
-      <div class="eyebrow head-font">Tickets</div>
-      <h1>Choose Your Pass</h1>
-      <p style="max-width:64ch; margin:0 0 8px;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis
-        augue non est gravida dictum. Integer dictum, arcu at hendrerit
-        tincidunt, justo nibh blandit nisl, ut pulvinar massa risus sed ante.
-      </p>
-    </div>
-
-    <section class="section" aria-labelledby="passes">
-      <h2 id="passes">Passes</h2>
-      <div class="grid" role="list">
-        <article class="card" role="listitem">
-          <span class="price-badge" aria-label="Price">$99</span>
-          <h3>1&nbsp;Day Pass</h3>
-          <ul class="list">
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Quisque placerat arcu eu risus.</li>
-            <li>Curabitur porta elit a sapien.</li>
-          </ul>
-          <button class="btn btn--primary head-font" type="button">Get Ticket</button>
-        </article>
-
-        <article class="card" role="listitem">
-          <span class="price-badge" aria-label="Price">$225</span>
-          <h3>3&nbsp;Day Pass</h3>
-          <ul class="list">
-            <li>Praesent suscipit leo non urna.</li>
-            <li>Aliquam consequat mi et mi.</li>
-            <li>Vestibulum ante ipsum primis.</li>
-          </ul>
-          <button class="btn btn--primary head-font" type="button">Get Ticket</button>
-        </article>
-
-        <article class="card" role="listitem">
-          <span class="price-badge" aria-label="Price">$395</span>
-          <h3>VIP&nbsp;Pass</h3>
-          <ul class="list">
-            <li>Sed eget diam at mi lacinia.</li>
-            <li>Phasellus a nibh sed justo.</li>
-            <li>Aenean tempor nisi sed leo.</li>
-          </ul>
-          <button class="btn btn--primary head-font" type="button">Get Ticket</button>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="addons">
-      <h2 id="addons">Add-ons</h2>
-
-      <div class="addon">
-        <div class="addon__header">
-          <h3 class="addon__title">Parking</h3>
-          <div class="qty-price">
-            <label class="qty head-font" aria-label="Select quantity">
-              <span aria-hidden="true">Qty</span>
-              <input type="number" min="0" value="0" inputmode="numeric" aria-label="Parking quantity">
-            </label>
-            <span class="pill" aria-label="Price">$25</span>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacific Pulse - Ticket</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/tickets.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
+    <script src="https://kit.fontawesome.com/bcab9e1cd0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="home.html"><img src="../images/Logo.png" alt="Pacific Pulse Logo"></a>
         </div>
-        <p class="addon__body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          commodo, mi id consequat venenatis, magna lorem tristique nibh, sed
-          pulvinar erat arcu a erat. Integer interdum placerat augue sit amet
-          viverra.
-        </p>
-        <button class="btn btn--secondary head-font" type="button">Add Parking</button>
-      </div>
 
-      <div class="addon">
-        <div class="addon__header">
-          <h3 class="addon__title">Locker</h3>
-          <div class="qty-price">
-            <label class="qty head-font" aria-label="Select quantity">
-              <span aria-hidden="true">Qty</span>
-              <input type="number" min="0" value="0" inputmode="numeric" aria-label="Locker quantity">
-            </label>
-            <span class="pill" aria-label="Price">$20</span>
-          </div>
-        </div>
-        <p class="addon__body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          porttitor, sapien eget bibendum iaculis, lacus mauris efficitur
-          lectus, a volutpat arcu quam a velit. In hac habitasse platea dictumst.
-        </p>
-        <button class="btn btn--secondary head-font" type="button">Add Locker</button>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-left">
-        <div class="footer-logo"></div>
-        <div class="footer-links">
-          <ul>
-            <li><a href="tickets.html">Get Tickets</a></li>
-            <li><a href="lineup.html">Line Up</a></li>
-            <li><a href="experience.html">Experience</a></li>
-          </ul>
-          <ul>
-            <li><a href="about.html">About Us</a></li>
+        <div class="nav-links-buttons">
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="lineup.html">Lineup</a></li>
+            <li><a href="experience.html">Experiences</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
           </ul>
+
+          <div class="nav-buttons">
+            <button class="login">Login</button>
+            <button class="tickets">Get Tickets</button>
+          </div>
         </div>
+      </nav>
+    </header>
+ <main class="page">
+  <!-- HERO -->
+  <section class="hero">
+      <h1>Tickets</h1>
+      <p>
+        Get ready for three days of vancouverite soundscapes, art, and sunshine at Pacific Pulse 2025.
+        Choose the ticket that fits your vibe—from a single-day taste to full VIP luxury—and get ready
+        to groove by the Pacific waves.
+      </p>
+  </section>
+
+  <!-- TICKETS -->
+  <section class="section" aria-labelledby="buy_Now">
+    <h2 id="buy_Now">BUY NOW</h2>
+
+    <div class="grid" role="list">
+      <!-- 1 Day -->
+      <article class="card" role="listitem">
+        <h3 class="card-title">
+          1&nbsp;Day Pass
+          <span class="price">$99</span>
+        </h3>
+        <ul class="list">
+          <li>Perfect for soaking up the energy for a single unforgettable day.</li>
+          <li>Catch favorite headliners and explore immersive art spaces.</li>
+          <li>No commitment required—pick your day and vibe out.</li>
+        </ul>
+        <div class="qty-row">
+          <label class="qty" aria-label="Quantity for 1 day pass">
+            <span>Qty</span>
+            <input type="number" min="1" value="1" inputmode="numeric" />
+          </label>
+          <button class="btn btn--primary" type="button">Get Ticket</button>
+        </div>
+      </article>
+
+      <!-- 3 Day -->
+      <article class="card" role="listitem">
+        <h3 class="card-title">
+          3&nbsp;Day Pass
+          <span class="price">$225</span>
+        </h3>
+        <ul class="list">
+          <li>Access all three days of the festival.</li>
+          <li>Includes re-entry and a collectible wristband.</li>
+          <li>Digital schedule access to plan your perfect weekend.</li>
+        </ul>
+        <div class="qty-row">
+          <label class="qty" aria-label="Quantity for 3 day pass">
+            <span>Qty</span>
+            <input type="number" min="1" value="1" inputmode="numeric" />
+          </label>
+          <button class="btn btn--primary" type="button">Get Ticket</button>
+        </div>
+      </article>
+
+      <!-- VIP -->
+      <article class="card" role="listitem">
+        <h3 class="card-title">
+          VIP&nbsp;Pass
+          <span class="price">$395</span>
+        </h3>
+        <ul class="list">
+          <li>Exclusive bars and lounges for a premium experience.</li>
+          <li>20% off select food trucks and vendors.</li>
+          <li>VIP-only merch and goodies—comfort and style.</li>
+        </ul>
+        <div class="qty-row">
+          <label class="qty" aria-label="Quantity for VIP pass">
+            <span>Qty</span>
+            <input type="number" min="1" value="1" inputmode="numeric" />
+          </label>
+          <button class="btn btn--primary" type="button">Get Ticket</button>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+
+  <section class="newsletter-section">
+          <h3>Stay Up to Date with Pacific Pulse!</h3>
+          <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Sign Up</button>
+          </form>
+    </section>
+  <footer>
+    
+  <div class="footer-container">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h3>FESTIVAL</h3>
+        <ul>
+          <li><a href="#">Tickets</a></li>
+          <li><a href="#">About the Festival</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
       </div>
 
-      <div class="footer-right">
-        <div class="footer-icons">
-          <div class="icon"></div>
-          <div class="icon"></div>
-          <div class="icon"></div>
-        </div>
-        <div class="footer-search">
-          <input type="text" placeholder="Search">
-        </div>
+      <div class="footer-column">
+        <h3>EXPLORE</h3>
+        <ul>
+          <li><a href="#">Stages</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Lineup</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-bar"></div>
-      <div class="footer-mini-bars">
-        <div class="mini"></div>
-        <div class="mini"></div>
-        <div class="mini"></div>
-      </div>
-    </div>
-  </footer>
 
+      <div class="footer-column">
+        <h3>INFO</h3>
+        <ul>
+          <li><a href="#">Plan Your Journey</a></li>
+          <li><a href="#">Getting Here</a></li>
+          <li><a href="#">Festival Map</a></li>
+          <li><a href="#">Parking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>CONTACT</h3>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="copyright">
+      <p>&copy; 2025 Pacific Pulse. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 </body>
-
 </html>
