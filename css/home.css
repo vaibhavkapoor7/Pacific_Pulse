@@ -221,6 +221,7 @@
     font-family: var(--antartican);
     font-size: 1.5rem;
     font-weight: bold;
+    text-decoration: none;
 }
 .experiences .experiences-text .see-more-btn:hover {
     opacity: 90%;
@@ -231,11 +232,76 @@
     color: white;
     margin-bottom: 0.5rem;
 }
-
-.information {
-    background-color: white;
+.experience-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
 }
-
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.experience-item a {
+    text-decoration: none;
+}
+.experience-box {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px black;
+    margin-bottom: 1rem;
+    width: 65%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.experience-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.experience-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.5rem;
+}
+.experience-title {
+    font-family: var(--antartican);
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.experience-title:hover {
+    text-decoration: underline;
+}
+.location {
+    background-color: white;
+    padding: 2.5rem 2.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.location-header {
+    padding: 2.5rem 4rem;
+    color: var(--drk-green);
+    font-family: var(--fisterra);
+    font-size: 2.5rem;
+    text-align: left;
+    width: 100%;
+}
 
 
 
