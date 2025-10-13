@@ -5,167 +5,317 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pacific Pulse - Home</title>
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
+    <script src="https://kit.fontawesome.com/bcab9e1cd0.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="../images/Logo.png" alt="Pacific Pulse Logo" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="lineup.html">Line up</a></li>
-          <li><a href="tickets.html">Tickets</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="home.html"><img src="../images/Logo.png" alt="Pacific Pulse Logo"></a>
+        </div>
+
+        <div class="nav-links-buttons">
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="lineup.html">Lineup</a></li>
+            <li><a href="experience.html">Experiences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-buttons">
+            <button class="login">Login</button>
+            <button class="tickets">Get Tickets</button>
+          </div>
+        </div>
       </nav>
     </header>
-<!-- 
-  This is where the main part of the page starts and the header ends    
--->
-    <body>
-      <!-- TODO: Remove the <br> and <hr> once styling is commenced -->
-      <br>
-      <hr>
-      <section class="festival-info">
-        <h1>PACIFIC PULSE</h1>
-        <h3>Date: August 21st - 23rd, 2026</h3>
-        <h3>Location: Ceperley Meadow in Stanley Park</h3>
+    <div class="ticker-container">
+        <div class="ticker-content">
+          <span>This is test ONE!</span>
+          <span>This is test TWO!</span>
+          <span>This is test THREE!</span>
+        </div>
+    </div>
+    <!-- Where the lineup cards section starts -->
+      <section class="info">
+        <div class="info-text">
+          <h1>PACIFIC PULSE</h1>
+          <p>August 21st - 23rd, 2026</p>
+          <p>Ceperley Meadow in Stanley Park</p>
+        </div>
+        <a href="home.html"><img src="../images/logo-circular.png" alt="Circular logo for Pacific Pulse"></a>
       </section>
 
-      <section class="what-is">
+      <section class="about">
         <h2>WHAT IS PACIFIC PULSE?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eligendi architecto, aut quia commodi veniam nam inventore sed dicta voluptates natus quas magni porro enim error. Nam in repellat blanditiis?</p>
+        <p>
+          Three days. One stunning coastal setting. Endless rhythm. 
+          <br>
+          Pacific Pulse brings together indie pop, alternative rock, and art in the heart of Vancouver's iconic Stanley Park.
+          <br>
+          Soak up the sunshine, dance barefoot in the grass, and celebrate the pulse of live music by the sea.
+        </p>
       </section>
       
       <section class="lineup">
-        <h2>LINEUP</h2>
-        <button>SEE FULL LINEUP</button>
-        <!-- Cards for the featured artists -->
-        <div class="card">
-          <div class="card-image">
-            <div class="card-date">
-              <span>00</span>
-              <p>MONTH</p>
-            </div>
-          </div>
-          <div class="card-content">
-            <p class="location">LOCATION</p>
-            <h3>Artist ##</h3>
-            <p class="description">BIO: Lorem ipsum dolor sit amet consectetur adipisicing elit. At quia voluptas quos quaerat vero dolor porro natus, cupiditate itaque dicta, fugit voluptatum hic sed suscipit laudantium, repellendus numquam officiis velit.</p>
-            <a href="#">Read More</a>
-          </div>
+        <div class="lineup-text">
+          <h2>LINEUP</h2>
+          <a href="lineup.html"><button class="see-full-lineup">SEE FULL LINEUP <i class="fa-solid fa-arrow-right"></i></button></a>
         </div>
+      
+      <!-- Carter White -->
+      <div class="artist-card">
+        <img src="../images/carter-white.png" alt="Carter White" class="artist-image">
+
+        <div class="artist-info">
+          <div class="top-row">
+            <p class="artist-date">August 21st, 2026</p>
+            <button class="calendar-icon" title="Add to calendar">
+              <i class="fa-solid fa-calendar-plus add-calendar"></i>
+            </button>
+          </div>
+
+          <h3 class="artist-name">CARTER WHITE</h3>
+
+          <div class="artist-tags">
+            <span class="tag time">07:00 PM</span>
+            <span class="tag stage">MAIN STAGE</span>
+          </div>
+
+          <p class="artist-bio">
+            At 30 years old, Carter White has become one of the freshest faces of modern country. Known for heartfelt ballads and high-energy stage charisma, he blends traditional southern twang with contemporary storytelling.
+          </p>
+        </div>
+      </div>
+
+      <!-- Indigo -->
+      <div class="artist-card">
+        <img src="../images/indigo.webp" alt="Indigo" class="artist-image">
+
+        <div class="artist-info">
+          <div class="top-row">
+            <p class="artist-date">August 21st, 2026</p>
+            <button class="calendar-icon" title="Add to calendar">
+              <i class="fa-solid fa-calendar-plus add-calendar"></i>
+            </button>
+          </div>
+
+          <h3 class="artist-name">INDIGO</h3>
+
+          <div class="artist-tags">
+            <span class="tag time">01:30 PM</span>
+            <span class="tag stage">MAIN STAGE</span>
+          </div>
+
+          <p class="artist-bio">
+            At just 21, Indigo is an up-and-coming force in the alternative rock scene. With raw lyrics and a moody soundscape, Indigo channels youthful energy and vulnerability into every performance, earning a fast-growing fan base.
+          </p>
+        </div>
+      </div>
+
+      <!-- Joelle -->
+      <div class="artist-card">
+        <img src="../images/joelle.webp" alt="Joelle" class="artist-image">
+
+        <div class="artist-info">
+          <div class="top-row">
+            <p class="artist-date">August 21st, 2026</p>
+            <button class="calendar-icon" title="Add to calendar">
+              <i class="fa-solid fa-calendar-plus add-calendar"></i>
+            </button>
+          </div>
+
+          <h3 class="artist-name">JOELLE</h3>
+
+          <div class="artist-tags">
+            <span class="tag time">03:00 PM</span>
+            <span class="tag stage">MAIN STAGE</span>
+          </div>
+
+          <p class="artist-bio">
+            Joelle brings dreamy indie-pop melodies layered with intimate lyricism. Her soulful vocals and playful beats make her a must-watch artist on the rise, drawing comparisons to festival darlings while carving her own sound.
+          </p>
+        </div>
+      </div>
+
+      <!-- Roan -->
+      <div class="artist-card">
+        <img src="../images/Roan.png" alt="Roan" class="artist-image">
+
+        <div class="artist-info">
+          <div class="top-row">
+            <p class="artist-date">August 22nd, 2026</p>
+            <button class="calendar-icon" title="Add to calendar">
+              <i class="fa-solid fa-calendar-plus add-calendar"></i>
+            </button>
+          </div>
+
+          <h3 class="artist-name">ROAN</h3>
+
+          <div class="artist-tags">
+            <span class="tag time">04:30 PM</span>
+            <span class="tag stage">MAIN STAGE</span>
+          </div>
+
+          <p class="artist-bio">
+            Roan delivers heavy guitar lines and emotionally charged vocals with raw intensity. Their sound bridges classic alt-rock grit with modern edge, making each performance thunderous and unforgettable.
+          </p>
+        </div>
+      </div>
+
+      <!-- Hole$ -->
+      <div class="artist-card">
+        <img src="../images/hole$.png" alt="Hole$" class="artist-image">
+
+        <div class="artist-info">
+          <div class="top-row">
+            <p class="artist-date">August 22nd, 2026</p>
+            <button class="calendar-icon" title="Add to calendar">
+              <i class="fa-solid fa-calendar-plus add-calendar"></i>
+            </button>
+          </div>
+
+          <h3 class="artist-name">HOLE$</h3>
+
+          <div class="artist-tags">
+            <span class="tag time">07:15 PM</span>
+            <span class="tag stage">MAIN STAGE</span>
+          </div>
+
+          <p class="artist-bio">
+            The boundary-pushing indie-pop band is defined by synth-heavy beats and lyrical wit. Known for their energetic live sets, Hole$ bring infectious fun to every festival stage.
+          </p>
+        </div>
+      </div>
+      <!-- TODO: Add a total of 5 artist cards -->
 
 
       </section>
+
+
       <section class="experiences">
-        <h2 class="section-title">EXPERIENCES</h2>
-        <div class="experience-grid">
-
-          <div class="experience-card">
-            <div class="image-box"></div>
-            <p class="label"><a href="">FOOD & DRINK</a></p>
+        <div class="experiences-text">
+          <h2 class="section-title">EXPERIENCES</h2>
+          <a href="experience.html">
+            <button class="see-more-btn">SEE MORE
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
+        </div>
+        <!-- FOOD AND DRINK SECTION -->
+        <div class="experience-boxes">
+          <div class="experience-item">
+            <div class="experience-box">
+              <a href="experience.html"><img src="" alt=""></a>
           </div>
-
-          <div class="experience-card">
-            <div class="image-box"></div>
-            <p class="label"><a href="">ACTIVITY 1</a></p>
+          <a href="experience.html">
+            <h3 class="experience-title">FOOD & DRINK</h3>
+          </a>
+        </div>
+        <!-- AFTER DARK DJ SECTION -->
+          <div class="experience-item">
+            <div class="experience-box">
+              <a href="experience.html"><img src="../images/dj.webp" alt=""></a>
+            </div>
+            <a href="experience.html">
+              <h3 class="experience-title">AFTER DARK DJ</h3>
+            </a>
           </div>
-
-          <div class="experience-card">
-            <div class="image-box"></div>
-            <p class="label"><a href="">ACTIVITY 2</a></p>
+          <!-- WORKSHOP SECTION -->
+          <div class="experience-item">
+            <div class="experience-box">
+              <a href="experience.html"><img src="../images/workshops.webp" alt="Workshop" class="workshop-img"></a>
+            </div>
+            <a href="experience.html">
+              <h3 class="experience-title">WORKSHOPS</h3>
+            </a>
           </div>
-
-          <div class="experience-card">
-            <div class="image-box"></div>
-            <p class="label"><a href="">ACTIVITY 3</a></p>
-          </div>
-
+          
         </div>
       </section>
 
-      <section class="information">
-
-          <div class="location">
-            <img src="#" alt="">
-            <a href="">
-              <p>Location</p>
-            </a>
+      <!-- --- LOCATION SECTION  --- -->
+      <div class="location-header">
+        <h2>WHERE TO FIND US!</h2>
+      </div>
+      <section class="location">
+        <div class="map-container">
+          <div class="map">
+            <iframe title="Google Map view of Pacific Pulse venue" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d800.1422502065611!2d-123.14932378016874!3d49.29394426721011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1760225204695!5m2!1sen!2sca" width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
-
-          <div class="transport">
-            <img src="#" alt="">
-            <a href="#">
-              <p>Transport</p>
-            </a>
-          </div>
-
-        
-          <div class="hours">
-            <img src="#" alt="">
-            <a href="#">
-              <p>Hours</p>
-            </a>
-          </div>
-
-
-          <div class="accessibility">
-            <img src="#" alt="">
-            <a href="#">
-              <p>Accessibility</p>
-            </a>
-          </div>
-
+        </div>
       </section>
-
     </body>
-    <hr>
+    
+    <!-- NEWSLETTER SECTION -->
+     <section class="newsletter-section">
+          <h3>Stay Up to Date with Pacific Pulse!</h3>
+          <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Sign Up</button>
+          </form>
+    </section>
 
-    <!-- 
-      This is where the page content ends and the footer starts
-    -->
-    <footer>
-      <div class="quick-links">
-        <h3>Quick Links</h3>
+    <!-- FOOTER -->
+  <footer>
+  <div class="footer-container">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h3>FESTIVAL</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Lineup & Schedule</a></li>
           <li><a href="#">Tickets</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">About the Festival</a></li>
+          <li><a href="#">FAQs</a></li>
         </ul>
       </div>
-      <div class="Newsletter">
-        <h3>Newsletter</h3>
-        <form>
-          <input type="email" placeholder="Enter your email" required />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-      <div class="social-media">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-          <!-- TODO Fix the footer icons as they are not showing up - can use fontawesome instead of a png -->
-          <a href="#"><img src="icons/instagram.png" alt="Instagram" /></a>
-          <a href="#"><img src="icons/tiktok.png" alt="TikTok" /></a>
-          <a href="#"><img src="icons/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="icons/youtube.png" alt="YouTube" /></a>
-        </div>
-      </div>
-      <div class="legal">
-        <h3>Legal</h3>
+
+      <div class="footer-column">
+        <h3>EXPLORE</h3>
         <ul>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Stages</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Lineup</a></li>
+          <li><a href="#">About Us</a></li>
         </ul>
       </div>
-      <div class="copyright">
-        <p>&copy; 2025 Pacific Pulse. All rights reserved.</p>
+
+      <div class="footer-column">
+        <h3>INFO</h3>
+        <ul>
+          <li><a href="#">Plan Your Journey</a></li>
+          <li><a href="#">Getting Here</a></li>
+          <li><a href="#">Festival Map</a></li>
+          <li><a href="#">Parking</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+
+      <div class="footer-column">
+        <h3>CONTACT</h3>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="copyright">
+      <p>&copy; 2025 Pacific Pulse. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 </html>
