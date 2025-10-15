@@ -26,8 +26,6 @@
     color: var(--lgt-cream);
     font-size: clamp(1rem, 1.2vw + .6rem, 1.125rem);
 }
-
-/* ------- SECTION TITLE ------- */
 .section {
     padding: 0 0 64px;
     background-color: var(--lgt-cream);
@@ -44,7 +42,7 @@
       ;
 }
 
-/* ------- GRID ------- */
+
 .grid {
     display: flex;
     justify-self: center;
@@ -66,8 +64,6 @@
         grid-template-columns: 1fr;
     }
 }
-
-/* ------- CARD ------- */
 .card {
     display: flex;
     flex-direction: column;
