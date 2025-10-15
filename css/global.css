@@ -84,7 +84,11 @@
         font-weight: bold;
         cursor: pointer;
       }
-
+      /* Styling for the "get tickets" button */
+      .nav-buttons .tickets a {
+        text-decoration: none;
+        color: white;
+      }
       .login {
         background-color: var(--blue);
       }
