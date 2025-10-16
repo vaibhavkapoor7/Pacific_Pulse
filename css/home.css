@@ -104,32 +104,50 @@
 .lineup .see-full-lineup:hover {
     opacity: 85%;
 }
+
+/* ---  STYLING FOR CAROUSEL  --- */
+.carousel {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel:hover .group {
+  animation-play-state: paused;
+}
+.group {
+    display: flex;
+    align-items: center;
+    animation: spin 15s infinite linear;
+    padding-right: 2rem;
+}
+
 /* --- STYLING FOR ARTIST CARD --- */
 /* TODO: add styling for mobile versions */
 .artist-card {
-  display: flex;
-  align-items: flex-start;
-  background-color: white;
-  border: 1px solid #1c1c1c;
-  border-radius: 1rem;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 680px;
-  height: 355px;
-  box-shadow: 2px 2px 0 #1c1c1c;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.artist-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 4px 6px 0 black;
+    flex: 0 0 680px;
+    margin-right: 2rem;
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid #1c1c1c;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 2rem;
+    max-width: 680px;
+    height: 355px;
 }
 .artist-image {
-  width: 240px;
-  height: 300px;
-  border-radius: 1rem;
-  object-fit: cover;
-  flex-shrink: 0;
-  margin-right: 2rem;
+    display: block;
+    width: 240px;
+    height: 300px;
+    border-radius: 1rem;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 2rem;
 }
 /* === Right-side text layout === */
 .artist-info {
@@ -312,11 +330,7 @@
 
 
 /* --- ANIMATIONS  --- */
-@keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+@keyframes spin {
+    from {transform: translateX(0);}
+    to {transform: translateX(-100%);}
 }

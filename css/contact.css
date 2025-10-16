@@ -1,5 +1,155 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
+/* --- STYLING FOR TICKER BAR  --- */
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--yellow);
+    padding: 10px;
+    white-space: nowrap;
+}
+.ticker-content {
+    display: inline-block;
+    animation: scroll-left 15s linear infinite;
+    font-family: var(--antartican);
+    font-weight: bold;
+}
+.ticker-content span {
+    padding-right: 380px;
+}
+
+main {
+    background-color: var(--lgt-cream);
+}
+.content-section {
+    background-color: var(--drk-green);
+    padding: 2rem 4rem 4rem;
+    font-family: var(--antartican);
+    margin-bottom: 1rem;
+}
+.content-title {
+    color: var(--lgt-cream);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-title h1 {
+    font-family: var(--fisterra);
+    font-size: 2.5rem;
+}
+
+.content-title p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contentCard-Grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    gap: 1rem;
+}
+
+.contentCard {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.contentCard:hover{
+    scale: 1.02;
+    transform: translateY(-4px);
+    box-shadow: 4px 6px 0 black;
+    transition: all 0.3s ease;
+}
+.contentCard h4{
+    font-size: 1.3rem;
+    padding-bottom: .3rem;
+    color: var(--drk-green);
+}
+
+.contentCard p a {
+    color: black;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.contentCard p a:hover {
+    color: var(--orange);
+}
+
+/*FAQ*/
+.FAQsection {
+    padding: 2rem 4rem;
+    font-family: var(--antartican);
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 6rem;
+}
+
+.FAQsection h2 {
+    font-family: var(--fisterra);
+    font-size: 2.5rem;
+    color: var(--drk-green);
+}
+
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-bottom: 2rem;
+}
+
+.FAQ h3 {
+    font-size: 2rem;
+    font-family: var(--fisterra);
+    color: var(--drk-green);
+}
+
+.FAQset {
+    list-style: none;
     padding: 0;
+    border-bottom: 1.5px solid #000000;
+    padding-bottom: .5rem;
+}
+
+.FAQques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--antartican);
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+    color: var(--drk-green);
+    transition: all 0.3s ease;
+}
+
+.FAQques:hover {
+    color: var(--orange);
+}
+
+.faq-toggle-icon {
+    display: block;
+    margin-left: auto; 
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.FAQans{
+    display: none;
+}
+
+.FAQset.active .FAQques {
+    color: var(--orange);
+}
+
+.FAQset.active .FAQans {
+    display: block;
 }
