@@ -109,8 +109,9 @@
     font-size: 1rem;
     text-decoration: none;
     font-weight: 500;
+    transition: all 0.1s ease;
 }
-.pill:hover {
+  .pill:hover {
     background-color: var(--orange);
 }
 

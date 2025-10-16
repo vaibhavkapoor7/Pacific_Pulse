@@ -302,14 +302,13 @@
   </div>
 </footer>
 <script>
-  let faqItems = document.querySelectorAll('.FAQset');
+let faqItems = document.querySelectorAll('.FAQset');
 
-  faqItems.forEach(item => {
-    let question = item.querySelector('.FAQques');
-    question.addEventListener('click', () => {
-      faqItems.forEach (faq => faq.classList.remove('active'));
-      item.classList.add('active');
-    });
+faqItems.forEach(item => {
+  let question = item.querySelector('.FAQques');
+  question.addEventListener('click', () => {
+    item.classList.toggle('active');
   });
+});
 </script>
 </html>

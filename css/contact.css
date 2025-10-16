@@ -21,9 +21,9 @@ main {
 }
 .content-section {
     background-color: var(--drk-green);
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 4rem;
     font-family: var(--antartican);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .content-title {
     color: var(--lgt-cream);
@@ -31,7 +31,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-
 }
 
 .content-title h1 {
@@ -57,15 +56,26 @@ main {
     border: 2px solid black;
 }
 
+.contentCard:hover{
+    scale: 1.02;
+    transform: translateY(-4px);
+    box-shadow: 4px 6px 0 black;
+    transition: all 0.3s ease;
+}
 .contentCard h4{
-    text-transform: uppercase;
     font-size: 1.3rem;
     padding-bottom: .3rem;
+    color: var(--drk-green);
 }
 
 .contentCard p a {
-    color: var(--blue);
+    color: black;
     font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.contentCard p a:hover {
+    color: var(--orange);
 }
 
 /*FAQ*/
@@ -118,6 +128,7 @@ main {
     padding: 0;
     width: 100%;
     color: var(--drk-green);
+    transition: all 0.3s ease;
 }
 
 .FAQques:hover {
