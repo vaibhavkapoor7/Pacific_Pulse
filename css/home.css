@@ -121,7 +121,7 @@
 .group {
     display: flex;
     align-items: center;
-    animation: spin 10s infinite linear;
+    animation: spin 15s infinite linear;
     padding-right: 2rem;
 }
 
