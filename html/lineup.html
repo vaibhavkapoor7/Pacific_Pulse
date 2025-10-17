@@ -47,18 +47,23 @@
 
       <!-- start of the page -->
         <section class="lineup-header">
-          <div class="lh-text">
-            <h1>2026 LINEUP</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae eveniet mollitia ea qui laborum.</p>
-          </div>
+          <h1 class="lineup-title">2026 LINEUP</h1>
+          <p class="lineup-subtitle">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur possimus deserunt amet alias enim, quasi obcaecati aliquam aperiam perspiciatis, voluptatibus perferendis fugit ducimus aut? Consequuntur?
+          </p>
         </section>
 
         <!-- start of lineup cards -->
         <section class="lineup">
-          <button onclick="filterContent('all')">All</button>
-          <button onclick="filterContent('day1')">Day 1</button>
-          <button onclick="filterContent('day2')">Day 2</button>
-          <button onclick="filterContent('day3')">Day 3</button>
+          <div class="filter-bar">
+            <span class="filter-label">FILTERS:</span>
+            <div class="filter-btn-group">
+              <button class="filter-btn active" onclick="selectFilter(this); filterContent('all')">All <span class="close-icon">&times;</span></button>
+              <button class="filter-btn" onclick="selectFilter(this); filterContent('day1')">Day 1</button>
+              <button class="filter-btn" onclick="selectFilter(this); filterContent('day2')">Day 2</button>
+              <button class="filter-btn" onclick="selectFilter(this); filterContent('day3')">Day 3</button>
+            </div>
+          </div>
           <!-- ===  DAY 1 ARTISTS  === -->
           <!-- Carter White -->
           <div class="artist-card" data-category="day1">
