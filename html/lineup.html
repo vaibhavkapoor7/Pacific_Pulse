@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
     <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
     <script src="https://kit.fontawesome.com/bcab9e1cd0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -55,7 +56,10 @@
 
         <!-- start of lineup cards -->
         <section class="lineup">
-          
+          <button onclick="filterContent('all')">All</button>
+          <button onclick="filterContent('day1')">Day 1</button>
+          <button onclick="filterContent('day2')">Day 2</button>
+          <button onclick="filterContent('day3')">Day 3</button>
           <!-- ===  DAY 1 ARTISTS  === -->
           <!-- Carter White -->
           <div class="artist-card" data-category="day1">
@@ -264,7 +268,7 @@
                 </button>
               </div>
 
-              <h3 class="artist-name">Hole$</h3>
+              <h3 class="artist-name">HOLE$</h3>
 
               <div class="artist-tags">
                 <span class="tag time">07:15PM</span>
@@ -278,6 +282,32 @@
           </div>
           <!-- ===  DAY 3 ARTISTS  === -->
           <!-- Bloom -->
+          <div class="artist-card" data-category="day3">
+            <img src="/images/bloom.webp" alt="Bloom" class="artist-image">
+            
+            <div class="artist-info">
+              
+              <div class="top-row">
+                <p class="artist-date">
+                  August 23rd, 2026
+                </p>
+                <button class="calendar-icon" title="Add to calendar">
+                  <i class="fa-solid fa-calendar-plus add-calendar"></i>
+                </button>
+              </div>
+
+              <h3 class="artist-name">BLOOM</h3>
+
+              <div class="artist-tags">
+                <span class="tag time">12:00PM</span>
+                <span class="tag stage">MAIN STAGE</span>
+              </div>
+
+              <p class="artist-bio">
+                At 23, Bloom shines as an acoustic country storyteller. With a warm voice and heartfelt songwriting. Bloom captures the intimacy of the genre while appealing to younger fans.
+              </p>
+            </div>
+          </div>
           <!-- Break -->
           <!-- Trinity -->
           <!-- Hipocamp -->

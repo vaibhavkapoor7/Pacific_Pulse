@@ -3,8 +3,24 @@
     margin: 0;
     padding: 0;
 }
+/* --- STYLING FOR TICKER BAR  --- */
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--yellow);
+    padding: 10px;
+    white-space: nowrap;
+}
+.ticker-content {
+    display: inline-block;
+    animation: scroll-left 15s linear infinite;
+    font-family: var(--antartican);
+    font-weight: bold;
+}
+.ticker-content span {
+    padding-right: 380px;
+}
 /* --- STYLING FOR ARTIST CARD --- */
-/* TODO: add styling for mobile versions */
 .artist-card {
     flex: 0 0 680px;
     margin-right: 2rem;
