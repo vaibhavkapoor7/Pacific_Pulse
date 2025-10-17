@@ -3,3 +3,216 @@
     margin: 0;
     padding: 0;
 }
+/* --- STYLING FOR TICKER BAR  --- */
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--yellow);
+    padding: 10px;
+    white-space: nowrap;
+}
+.ticker-content {
+    display: inline-block;
+    animation: scroll-left 15s linear infinite;
+    font-family: var(--antartican);
+    font-weight: bold;
+}
+.ticker-content span {
+    padding-right: 380px;
+}
+/* --- LINEUP HEADER --- */
+.lineup-header {
+  background: var(--drk-green);  
+  padding: 3rem 3rem 2rem 3rem;
+  margin-bottom: 2rem;  
+}
+.lineup-title {
+  font-family: var(--fisterra);
+  font-size: 4.5rem;
+  color: var(--lgt-cream);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+.lineup-subtitle {
+  font-family: var(--antartican);
+  font-size: 1.5rem;
+  color: var(--lgt-cream);
+  font-weight: normal;
+}
+/* --- FILTER BUTTONS --- */
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  margin-left: 3rem;
+}
+.filter-label {
+  font-family: var(--antartican);
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0.2em;
+}
+.filter-btn-group {
+    display: flex;
+    gap: 2rem;
+}
+.filter-btn {
+  font-family: var(--antartican);
+  font-size: 1.35rem;
+  color: var(--blue);
+  background: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.4em 1.6em;
+  margin: 0;
+  min-width: 90px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-weight: 400;
+}
+.filter-btn:not(.active):hover {
+  background: white;
+  color: var(--blue);
+}
+.filter-btn.active {
+  background: var(--blue);
+  color: white;
+  font-weight: 700;
+}
+.filter-btn .close-icon {
+  margin-left: 1em;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  pointer-events: none;
+}
+/* --- STYLING FOR ARTIST CARDS --- */
+.artist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+.artist-card {
+    width: 100%;
+    box-sizing: border-box;
+    flex: 0 0 680px;
+    margin-right: 2rem;
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid #1c1c1c;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 2rem;
+    max-width: 680px;
+    height: 355px;
+}
+.artist-image {
+    display: block;
+    width: 240px;
+    height: 300px;
+    border-radius: 1rem;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+/* === Right-side text layout === */
+.artist-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* Top row (date + icon) */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+.artist-date {
+  font-family: "antarctican-headline", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1c1c1c;
+}
+/* Calendar icon button */
+.calendar-icon {
+  background-color: #f8d79a;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.calendar-icon:hover {
+  background-color: #dc9364;
+  color: black;
+}
+/* Artist name */
+.artist-name {
+  font-family: var(--fisterra);
+  font-size: 2.2rem;
+  color: var(--drk-green);
+  margin: 0.25rem 0 0.75rem 0;
+}
+/* Time & Stage Tags */
+.artist-tags {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.tag {
+  font-family: "antarctican-headline", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.tag.time {
+  background-color: var(--yellow);
+  color: black;
+}
+.tag.stage {
+  background-color: var(--drk-green);
+  color: white;
+}
+/* Artist Bio */
+.artist-bio {
+  font-family: "antarctican-headline", sans-serif;
+  font-size: 1rem;
+  color: #1c1c1c;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* TODO: add animation for ticker bar */
+/* MEDIA QUERY */
+@media (max-width: 900px) {
+  .artist-grid {
+    grid-template-columns: 1fr;
+  }
+  /* OR if using flexbox:
+  .artist-card {
+    flex-basis: 100%;
+  }
+  */
+}
