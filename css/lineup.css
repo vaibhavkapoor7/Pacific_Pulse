@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+main {
+    background: var(--lgt-cream);
+}
 /* --- STYLING FOR TICKER BAR  --- */
 .ticker-container {
     width: 100%;
