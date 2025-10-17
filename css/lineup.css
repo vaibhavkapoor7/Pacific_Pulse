@@ -47,20 +47,18 @@
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 2.5rem;
+  margin-left: 3rem;
 }
-
 .filter-label {
   font-family: var(--antartican);
   font-size: 2rem;
   color: black;
   margin-bottom: 0.2em;
 }
-
 .filter-btn-group {
     display: flex;
     gap: 2rem;
 }
-
 .filter-btn {
   font-family: var(--antartican);
   font-size: 1.35rem;
@@ -81,26 +79,32 @@
   box-shadow: none;
   font-weight: 400;
 }
-
 .filter-btn:not(.active):hover {
   background: white;
   color: var(--blue);
 }
-
 .filter-btn.active {
   background: var(--blue);
   color: white;
   font-weight: 700;
 }
-
 .filter-btn .close-icon {
   margin-left: 1em;
   font-size: 1.5rem;
   vertical-align: middle;
   pointer-events: none;
 }
-/* --- STYLING FOR ARTIST CARD --- */
+/* --- STYLING FOR ARTIST CARDS --- */
+.artist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
 .artist-card {
+    width: 100%;
+    box-sizing: border-box;
     flex: 0 0 680px;
     margin-right: 2rem;
     display: flex;
@@ -198,4 +202,17 @@
   color: #1c1c1c;
   line-height: 1.6;
   max-width: 90%;
+}
+
+/* TODO: add animation for ticker bar */
+/* MEDIA QUERY */
+@media (max-width: 900px) {
+  .artist-grid {
+    grid-template-columns: 1fr;
+  }
+  /* OR if using flexbox:
+  .artist-card {
+    flex-basis: 100%;
+  }
+  */
 }
