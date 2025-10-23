@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
     }
     else {
         // if we don't have a firstname input then we are in the login
-        errors = getLoginFormErrors(email_input.value, password_input.value);
+        errors = getSignupFormErrors(email_input.value, password_input.value);
     }
 
     if(errors.length > 0){
