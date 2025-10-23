@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
 
     if(firstname_input) {
         // if we have a firstname input then we are in the signup
-        errors = getSignupFormErrors(firstname_input.value, email_input.vale, password_input.vale, repeat_password_input.vale);
+        errors = getSignupFormErrors(firstname_input.value, email_input.value, password_input.value, repeat_password_input.value);
     }
     else {
         // if we don't have a firstname input then we are in the login
@@ -44,6 +44,22 @@ function getSignupFormErrors(firstname, email, password, repeatPassword) {
         errors.push('Password is required');
         password_input.parentElement.classList.add('incorrect');
     }
+    if(password !== repeatPassword) {
+        errors.push('Password does not match repeated password');
+        repeat_password_input.parentElement.classList.add('incorrect');
+    }
 
     return errors;
 }
+const allInputs = [firstname_input, email_input, password_input, repeat_password_input]
+
+allInputs.forEach(input => {
+    // checks to see if the element has the .incorrect class styling and if it does - removes it
+    input.addEventListener('input', () => {
+        if(input.parentElement.classList.contains('incorrect')){
+            input.parentElement.classList.remove('incorrect')
+            // removes error messages once input field is being filled
+            error_message.innerText = ''
+        }
+    })
+});
