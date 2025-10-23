@@ -1,10 +1,17 @@
 @import url("https://use.typekit.net/jkh1hzt.css");
+:root {
+    --accent-color: var(--yellow);
+    --base-color: var(--lgt-cream);
+    --text-color: black;
+    --input-color: var(--lgt-green);
+}
 html {
     font-family: "antarctican-headline", sans-serif;
     font-weight: 500;
     font-style: normal;;
     font-size: 12pt;
-    color: black;
+    color: var(--text-color);
+    text-align: center;
 }
 body {
     min-height: 100vh;
@@ -14,7 +21,75 @@ body {
     background-position: right;
     overflow: hidden;
     margin: 0;
+    background-color: var(--base-color);
 }
 .wrapper {
-    background-color: var(--lgt-cream);
+    /* is this a necessary line of code? */
+    box-sizing: border-box;
+    height: 100vh;
+    /* applies for which ever value is bigger */
+    width: max(40%, 600px);
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    font-family: var(--fisterra);
+}
+form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+form > div {
+    /* style applies to direct child of form */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form label i {
+    background-color: var(--accent-color);
+    color: var(--drk-green);
+}
+form input {
+    box-sizing: border-box;
+    /* allows for responsive resizing of the element */
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--base-color);
+    border-left: none;
+    background-color: var(--base-color);
+    transition: 150ms ease;
+}
+form input:hover {
+    border: 2px solid var(--drk-green);
+}
+form input:focus {
+    outline: none;
+    border-color: ;
 }
