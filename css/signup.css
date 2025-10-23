@@ -1,0 +1,20 @@
+@import url("https://use.typekit.net/jkh1hzt.css");
+html {
+    font-family: "antarctican-headline", sans-serif;
+    font-weight: 500;
+    font-style: normal;;
+    font-size: 12pt;
+    color: black;
+}
+body {
+    min-height: 100vh;
+    background-image: url(../images/logo-r.png);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+    margin: 0;
+}
+.wrapper {
+    background-color: var(--lgt-cream);
+}
