@@ -134,5 +134,13 @@ a:hover {
 @media(max-width: 1100px) {
     .wrapper {
         width: min(600px, 100%);
+        border-radius: 0;
     }
+}
+/* style class for when there is an incorrect form entry */
+form div.incorrect label {
+    background-color: #f06272;
+}
+form div.incorrect input {
+    border-color: #f06272;
 }
