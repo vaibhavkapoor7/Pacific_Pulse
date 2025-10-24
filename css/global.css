@@ -178,8 +178,10 @@
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding-inline: 3rem;
+  box-sizing: border-box;
 }
 
 /* --- LAYING OUT COLUMNS  --- */
@@ -187,7 +189,20 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-bottom: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+  padding-inline: 0;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 160px;
+  max-width: 320px;
 }
 
 .footer-column h3 {
