@@ -98,25 +98,22 @@ main {
 /* --- STYLING FOR ARTIST CARDS --- */
 .artist-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); /* creates three equal columns */
     gap: 2rem;
     width: 100%;
     margin-top: 2rem;
 }
 .artist-card {
-    width: 100%;
     box-sizing: border-box;
-    flex: 0 0 680px;
-    margin-right: 2rem;
     display: flex;
     align-items: flex-start;
     background-color: white;
     border: 1px solid #1c1c1c;
     border-radius: 1rem;
-    padding: 3rem;
-    margin: 2rem;
-    max-width: 680px;
-    height: 355px;
+    padding: 2rem;
+    margin: 0;
+    max-width: none;
+    height: auto;
 }
 .artist-image {
     display: block;
@@ -208,13 +205,27 @@ main {
 
 /* TODO: add animation for ticker bar */
 /* MEDIA QUERY */
+/* responsive: 2 columns on medium screens, 1 column on small */
+@media (max-width: 11200px) {
+  .artist-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 900px) {
   .artist-grid {
     grid-template-columns: 1fr;
   }
-  /* OR if using flexbox:
   .artist-card {
-    flex-basis: 100%;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  */
+  .artist-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
 }
