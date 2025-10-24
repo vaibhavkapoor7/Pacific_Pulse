@@ -25,7 +25,7 @@ main > section:first-of-type {
 main > section:first-of-type h1 {
   margin: 0 0 16px;
   font-family: var(--fisterra), serif;
-  font-size: clamp(2.6rem, 4.6vw, 3.75rem);
+  font-size: 3.5rem;
   line-height: 1.02;
   letter-spacing: .5px;
   color: var(--lgt-cream);
@@ -35,7 +35,7 @@ main > section:first-of-type p {
   margin: 0 0 24px;
   max-width: 75ch;
   color: var(--lgt-cream);
-  font-size: clamp(1rem, 1.2vw + .6rem, 1.125rem);
+  font-size: 1.1rem;
 }
 
 
@@ -50,7 +50,7 @@ main section[id] > h2 {
   text-align: center;
   font-family: var(--fisterra), serif;
   color: var(--drk-green);
-  font-size: clamp(1.9rem, 2.7vw, 2.5rem);
+  font-size: 2.5rem;
   letter-spacing: .4px;
 }
 main > section:first-of-type nav {
