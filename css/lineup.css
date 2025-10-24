@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+  background: var(--lgt-cream);
+}
 main {
     background: var(--lgt-cream);
 }
@@ -101,7 +104,10 @@ main {
     grid-template-columns: repeat(3, 1fr); /* creates three equal columns */
     gap: 2rem;
     width: 100%;
+    padding-inline: 3rem;
+    box-sizing: border-box;
     margin-top: 2rem;
+    margin-bottom: 4rem;
 }
 .artist-card {
     box-sizing: border-box;
@@ -112,7 +118,6 @@ main {
     border-radius: 1rem;
     padding: 2rem;
     margin: 0;
-    max-width: none;
     height: auto;
 }
 .artist-image {
@@ -206,7 +211,7 @@ main {
 /* TODO: add animation for ticker bar */
 /* MEDIA QUERY */
 /* responsive: 2 columns on medium screens, 1 column on small */
-@media (max-width: 11200px) {
+@media (max-width: 1200px) {
   .artist-grid {
     grid-template-columns: repeat(2, 1fr);
   }
