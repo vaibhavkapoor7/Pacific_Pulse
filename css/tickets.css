@@ -5,13 +5,13 @@
 
 .hero {
     background: var(--drk-green);
-    margin: 0%;
+    margin: 0 0 0;
     padding: 64px 40px 72px;
     width: 100%;
 }
 
 .hero h1 {
-    margin: 0 0 16px;
+    margin: 0 30px 16px;
     font-family: var(--fisterra), serif;
     font-size: clamp(2.6rem, 4.6vw, 3.75rem);
     line-height: 1.02;
@@ -21,7 +21,7 @@
 }
 
 .hero p {
-    margin: 0;
+    margin: 0 30px;
     max-width: 75ch;
     color: var(--lgt-cream);
     font-size: clamp(1rem, 1.2vw + .6rem, 1.125rem);
@@ -98,9 +98,10 @@
     display: inline-block;
     line-height: 1;
     padding: 8px 18px;
-    border-radius: 999px;
-    background: var(--drk-green);
-    color: #fff;
+    border-radius: 10px;
+    background: var(--yellow);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+    color: black;
     font-weight: 800;
     font-size: .95rem;
 }
@@ -163,15 +164,16 @@
 }
 
 .btn.btn--primary {
-    background: color-mix(in srgb, var(--orange) 85%, white 15%);
-    color: #2b1511;
-    border: 0;
-    border-radius: 999px;
-    padding: 12px 18px;
-    font-weight: 900;
-    font-family: var(--antartican), sans-serif;
-    box-shadow: 0 3px 0 rgba(0, 0, 0, .12);
-    transition: filter .15s ease, transform .05s ease, background-color .2s ease;
+   font-family: "antarctican-headline", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: var(--drk-green);
+  color: white;
+  
 }
 
 .btn.btn--primary:hover {
