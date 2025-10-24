@@ -138,8 +138,7 @@
     border-radius: 1rem;
     padding: 3rem;
     margin: 2rem;
-    max-width: 680px;
-    height: 355px;
+    box-sizing: border-box;
 }
 .artist-image {
     display: block;
@@ -291,9 +290,9 @@
     display: block;
     border-radius: 0.5rem;
 }
+.title-base,
 .experience-title {
     font-family: var(--antartican);
-    font-size: 3.5rem;
     color: white;
     margin: 0;
     padding: 1rem 1rem;
@@ -301,6 +300,9 @@
     font-weight: bold;
     text-align: left;
     border-radius: 0.5rem;
+}
+.experience-title {
+    font-size: 3.5rem;
 }
 .experience-title:hover {
     text-decoration: underline;
