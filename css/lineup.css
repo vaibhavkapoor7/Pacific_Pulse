@@ -98,6 +98,10 @@ main {
   vertical-align: middle;
   pointer-events: none;
 }
+/* --- DAY SUMMARY SECTION --- */
+.day-summary {
+  display: none;
+}
 /* --- STYLING FOR ARTIST CARDS --- */
 .artist-grid {
     display: grid;

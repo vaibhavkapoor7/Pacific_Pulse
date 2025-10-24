@@ -5,7 +5,10 @@ function selectFilter(selectedBtn) {
 }
 
 function filterContent(category) {
-  let cards = document.querySelectorAll('.artist-card');
+  const cards = document.querySelectorAll('.artist-card');
+  const summaries = document.querySelectorAll ('.day-summary');
+
+  // --- FILTER CARDS ---
   cards.forEach(card => {
     if (category === 'all' || card.dataset.category === category) {
       card.style.display = '';
@@ -13,4 +16,15 @@ function filterContent(category) {
       card.style.display = 'none';
     }
   });
-}
+
+  // --- HIDE ALL SUMMARIES ---
+  summaries.forEach(summary => summary.style.display = 'none');
+
+  // --- SHOW THE ONE THAT MATCHES THE FILTER ---
+  if (category.startsWith('day')) {
+    const summaryToShow = document.getElementById(`${category}-summary`);
+    if (summaryToShow) {
+      summaryToShow.style.display = 'block';
+    }
+  }
+};
