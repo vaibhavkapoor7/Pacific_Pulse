@@ -1,4 +1,4 @@
-// ticker animation
+// ====== ticker animation ======
 document.addEventListener("DOMContentLoaded", () => {
   const tickerContent = document.querySelector(".ticker-content");
   const container = document.querySelector(".ticker-container");

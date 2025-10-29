@@ -1,35 +1,37 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 html {
   background: var(--lgt-cream);
 }
+html,
+body {
+  overflow-x: hidden;
+}
 main {
-    background: var(--lgt-cream);
+  background: var(--lgt-cream);
+}
+.page {
+  max-width: 100%;
 }
 /* --- STYLING FOR TICKER BAR  --- */
 .ticker-container {
-    overflow: hidden;
-    background-color: var(--yellow);
-    padding: 10px;
-    white-space: nowrap;
+  overflow: hidden;
+  background-color: var(--yellow);
+  padding: 10px;
+  white-space: nowrap;
 }
 .ticker-content {
-    display: inline-block;
-    animation: scroll-left 15s linear infinite;
-    font-family: var(--antartican);
-    font-weight: bold;
+  display: inline-block;
+  animation: scroll-left 15s linear infinite;
+  font-family: var(--antartican);
+  font-weight: bold;
 }
 .ticker-content span {
-    padding-right: 380px;
+  padding-right: 380px;
 }
 /* --- LINEUP HEADER --- */
 .lineup-header {
-  background: var(--drk-green);  
+  background: var(--drk-green);
   padding: 3rem 3rem 2rem 3rem;
-  margin-bottom: 2rem;  
+  margin-bottom: 2rem;
 }
 .lineup-title {
   font-family: var(--fisterra);
@@ -61,8 +63,8 @@ main {
   margin-bottom: 0.2em;
 }
 .filter-btn-group {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 .filter-btn {
   font-family: var(--antartican);
@@ -125,49 +127,51 @@ main {
 
 /* --- STYLING FOR ARTIST CARDS --- */
 .artist-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* creates three equal columns */
-    gap: 2rem;
-    width: 100%;
-    padding-inline: 3rem;
-    box-sizing: border-box;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 2rem auto 4rem 3rem;
+  justify-items: stretch;
+  grid-auto-rows: 1fr;
 }
 .artist-card {
-    box-sizing: border-box;
-    display: flex;
-    align-items: flex-start;
-    background-color: white;
-    border: 1px solid #1c1c1c;
-    border-radius: 1rem;
-    padding: 2rem;
-    margin: 0;
-    height: auto;
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.artist-media {
+  flex: 0 0 240px;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: block;
 }
 .artist-image {
-    display: block;
-    width: 240px;
-    height: 300px;
-    border-radius: 1rem;
-    object-fit: cover;
-    flex-shrink: 0;
-    margin-right: 2rem;
-    align-self: center; /* centers image vertically */
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 /* === Right-side text layout === */
 .artist-info {
-  flex: 1;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  min-width: 0;
 }
 /* Top row (date + icon) */
 .top-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.5rem;
+  align-items: center;
+  width: 100%;
+  /* margin-bottom: 0.5rem; */
 }
 .artist-date {
   font-family: "antarctican-headline", sans-serif;
@@ -230,23 +234,13 @@ main {
   font-size: 1rem;
   color: #1c1c1c;
   line-height: 1.6;
-  max-width: 90%;
+  margin-top: auto;
 }
 
 /* TODO: add animation for ticker bar */
 /* MEDIA QUERY */
-/* responsive: 2 columns on medium screens, 1 column on small */
-@media (max-width: 1200px) {
-  .artist-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 900px) {
-  .artist-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 700px) {
   .artist-card {
-    padding: 1.5rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -254,8 +248,11 @@ main {
   .artist-image {
     margin-right: 0;
     margin-bottom: 1rem;
-    width: 100%;
-    height: auto;
-    max-height: 300px;
+  }
+  .artist-info {
+    align-items: center;
+  }
+  .artist-tags {
+    justify-content: center;
   }
 }
