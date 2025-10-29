@@ -1,19 +1,28 @@
 /* --- STYLING FOR TICKER BAR  --- */
+:root {
+  --ticker-speed: 8s;
+  --ticker-gap: 1.5rem;
+}
+
 .ticker-container {
   width: 100%;
   overflow: hidden;
   background-color: var(--yellow);
-  padding: 10px;
+  padding: 10px 0;
   white-space: nowrap;
 }
 .ticker-content {
-  display: inline-block;
-  animation: scroll-left 30s linear infinite;
+  /* display: inline-block; */
+  display: flex;
+  gap: var(--ticker-gap);
+  white-space: nowrap;
+  align-items: center;
+  animation: scroll-left var(--ticker-speed) linear infinite;
   font-family: var(--antartican);
   font-weight: bold;
 }
 .ticker-content span {
-  padding-right: 120px;
+  padding-right: var(--ticker-gap);
 }
 
 /* --- STYLING FOR INFO SECTION --- */
@@ -121,7 +130,7 @@
 .group {
   display: flex;
   align-items: center;
-  animation: spin 40s infinite linear;
+  animation: spin 30s infinite linear;
   padding-right: 2rem;
 }
 
@@ -339,9 +348,9 @@
 }
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
