@@ -1,3 +1,4 @@
+*, *::before, *::after { box-sizing: border-box; }
 html {
   background: var(--lgt-cream);
 }
@@ -7,9 +8,6 @@ body {
 }
 main {
   background: var(--lgt-cream);
-}
-.page {
-  max-width: 100%;
 }
 /* --- STYLING FOR TICKER BAR  --- */
 .ticker-container {
@@ -128,35 +126,36 @@ main {
 /* --- STYLING FOR ARTIST CARDS --- */
 .artist-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
-  max-width: 1200px;
-  margin: 2rem auto 4rem 3rem;
+  margin: 2rem 2rem 4rem;
+  padding-inline: 1rem;
   justify-items: stretch;
   grid-auto-rows: 1fr;
 }
+
+.artist-grid > * { min-width: 0; }
 .artist-card {
   display: flex;
-  gap: 1rem;
-  align-items: stretch;
-  padding: 1rem;
-  border-radius: 0.75rem;
-  background: #fff;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid #1c1c1c;
+  border-radius: 1rem;
+  padding: 3rem;
+  margin: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  min-width: 0;
 }
-.artist-media {
-  flex: 0 0 240px;
-  overflow: hidden;
-  border-radius: 1rem;
-  display: block;
-}
+
 .artist-image {
-  width: 100%;
-  height: 100%;
   display: block;
+  width: 240px;
+  height: 300px;
+  border-radius: 1rem;
   object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 2rem;
 }
 /* === Right-side text layout === */
 .artist-info {
