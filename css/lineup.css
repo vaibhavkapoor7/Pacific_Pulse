@@ -1,4 +1,8 @@
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
   background: var(--lgt-cream);
 }
@@ -13,8 +17,8 @@ main {
 .ticker-container {
   overflow: hidden;
   background-color: var(--yellow);
-  padding: 10px;
-  white-space: nowrap;
+  padding: 10px 0;
+  white-space: border-box;
 }
 .ticker-content {
   display: inline-block;
@@ -134,7 +138,9 @@ main {
   grid-auto-rows: 1fr;
 }
 
-.artist-grid > * { min-width: 0; }
+.artist-grid > * {
+  min-width: 0;
+}
 .artist-card {
   display: flex;
   align-items: flex-start;
