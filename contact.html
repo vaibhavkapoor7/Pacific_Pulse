@@ -1,92 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pacific Pulse - Contact</title>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
-    <script src="https://kit.fontawesome.com/bcab9e1cd0.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacific Pulse - Contact</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
+  <script src="https://kit.fontawesome.com/bcab9e1cd0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!--nav bar-->
- <header>
-      <nav class="navbar">
-        <div class="logo">
-          <a href="index.html"><img src="images/Logo.png" alt="Pacific Pulse Logo"></a>
+  <!--nav bar-->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/Logo.png" alt="Pacific Pulse Logo"></a>
+      </div>
+
+      <div class="nav-links-buttons">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lineup.html">Lineup</a></li>
+          <li><a href="experience.html">Experiences</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+          <button class="login">Login</button>
+          <button class="tickets">
+            <a href="tickets.html">
+              Get Tickets
+            </a>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="content-section">
+
+      <div class="contact-layout">
+
+        <!-- LEFT COLUMN -->
+        <div class="contact-left">
+
+          <h1>CONTACT</h1>
+
+          <p>
+            Have a question, idea, or just want to say hello?
+            Fill out the form and our team will get back to you.
+            You can also browse the FAQs below for quick answers.
+          </p>
+
+          <a href="#faq" class="pill">FAQ Section</a>
+
+          <div class="email-section">
+
+            <p class="email-title">
+              Prefer to email directly? Find the right address below.
+            </p>
+
+            <div class="contentCard-Grid">
+
+              <div class="contentCard">
+                <h4>GENERAL REQUESTS</h4>
+                <a href="mailto:info@pacificpulse.com">
+                  info@pacificpulse.com
+                </a>
+              </div>
+
+              <div class="contentCard">
+                <h4>ACCESSIBILITY</h4>
+                <a href="mailto:access@pacificpulse.com">
+                  access@pacificpulse.com
+                </a>
+              </div>
+
+              <div class="contentCard">
+                <h4>SPONSORSHIP</h4>
+                <a href="mailto:sponsor@pacificpulse.com">
+                  sponsor@pacificpulse.com
+                </a>
+              </div>
+
+              <div class="contentCard">
+                <h4>PRESS</h4>
+                <a href="mailto:press@pacificpulse.com">
+                  press@pacificpulse.com
+                </a>
+              </div>
+
+              <div class="contentCard">
+                <h4>VOLUNTEER</h4>
+                <a href="mailto:volunteer@pacificpulse.com">
+                  volunteer@pacificpulse.com
+                </a>
+              </div>
+
+              <div class="contentCard">
+                <h4>CAREER</h4>
+                <a href="mailto:career@pacificpulse.com">
+                  career@pacificpulse.com
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="nav-links-buttons">
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="lineup.html">Lineup</a></li>
-            <li><a href="experience.html">Experiences</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <!-- RIGHT COLUMN -->
+        <div class="contact-form-container">
 
-          <div class="nav-buttons">
-            <button class="login">Login</button>
-            <button class="tickets">
-              <a href="tickets.html">
-                Get Tickets
-              </a>
+          <h2>SEND US A MESSAGE</h2>
+
+          <p>
+            Fill out the form and we'll get back to you within
+            2-3 business days.
+          </p>
+
+          <form id="contactForm">
+
+            <div class="form-row">
+
+              <div class="form-group">
+                <label>Name <span>*</span></label>
+                <input type="text" id="name" placeholder="Name">
+                <small class="error"></small>
+              </div>
+
+              <div class="form-group">
+                <label>Email <span>*</span></label>
+                <input type="email" id="email" placeholder="Email">
+                <small class="error"></small>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>Request Type <span>*</span></label>
+
+              <small class="helper">
+                (Choose the team you'd like to reach)
+              </small>
+
+              <select id="requestType">
+                <option value="">
+                  Select a Request Type
+                </option>
+                <option>General Requests</option>
+                <option>Accessibility</option>
+                <option>Sponsorship</option>
+                <option>Press</option>
+                <option>Volunteer</option>
+                <option>Career</option>
+              </select>
+
+              <small class="error"></small>
+
+            </div>
+
+            <div class="form-group">
+
+              <label>Message <span>*</span></label>
+
+              <textarea id="message" placeholder="Your message here..."></textarea>
+
+              <small class="error"></small>
+
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Send message
             </button>
-          </div>
+
+            <p id="successMessage"></p>
+
+          </form>
+
         </div>
-      </nav>
-    </header>
-  
-   
-    <main>
-      <div class="content-section">
-        <!--Title section-->
-        <div class="content-title">
-          <div>
-            <h1>CONTACT</h1>
-            <p>Get in touch with the festival team or browse the FAQs below.</p>
-          </div>
-          <div>
-            <a class="pill" href="#faq">FAQ SECTION</a>
-          </div>
-        </div>
-    <!--Contact Section-->
-        <div class="contentCard-Grid">
-        <!--Contact Cards 1-->
-          <div class="contentCard">
-            <h4>General Requests</h4>
-            <p><a href="mailto:access@pacificpulse.com">access@pacificpulse.com</a></p>
-          </div>
-        <!--Contact Cards 2-->
-          <div class="contentCard">
-            <h4>Accessibility</h4>
-            <p><a href="mailto:info@pacificpulse.com">info@pacificpulse.com</a></p>
-          </div>
-        <!--Contact Cards 3-->
-          <div class="contentCard">
-            <h4>Sponsorship</h4>
-            <p><a href="mailto:sponsor@pacificpulse.com">sponsor@pacificpulse.com</a></p>
-          </div>
-        <!--Contact Cards 4-->
-          <div class="contentCard">
-            <h4>Press</h4>
-            <p><a href="mailto:press@pacificpulse.com">press@pacificpulse.com</a></p>
-          </div>
-        <!--Contact Cards 5-->
-          <div class="contentCard">
-            <h4>Volunteer</h4>
-            <p><a href="mailto:volunteer@pacificpulse.com">volunteer@pacificpulse.com</a></p>
-          </div>
-        <!--Contact Cards 6-->
-          <div class="contentCard">
-            <h4>Career</h4>
-            <p><a href="mailto:career@pacificpulse.com">career@pacificpulse.com</a></p>
-          </div>
-        </div>
+
+      </div>
+
+    </div>
     </div>
 
-<!--FAQ Section-->
+    <!--FAQ Section-->
     <section>
       <div class="FAQsection" id="faq">
         <!--General FAQ-->
@@ -99,7 +205,8 @@
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              Pacific Pulse is a three-day indie pop, country and alternative rock festival held in Stanley Park, celebrating music, art, and coastal vibes.
+              Pacific Pulse is a three-day indie pop, country and alternative rock festival held in Stanley Park,
+              celebrating music, art, and coastal vibes.
             </div>
           </li>
           <!--Question 2-->
@@ -144,30 +251,32 @@
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              Ticket options include General Admission (GA) and VIP passes. Group bundles and student discounts are also offered.
+              Ticket options include General Admission (GA) and VIP passes. Group bundles and student discounts are also
+              offered.
             </div>
           </li>
           <!--Question 2-->
           <li class="FAQset">
             <button class="FAQques">
-               Where can I buy tickets?
+              Where can I buy tickets?
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              Tickets can be purchased directly through the official Pacific Pulse website <a href="tickets.html">here</a>.
+              Tickets can be purchased directly through the official Pacific Pulse website <a
+                href="tickets.html">here</a>.
             </div>
           </li>
           <!--Question 3-->
           <li class="FAQset">
             <button class="FAQques">
-               How do I receive my tickets?
+              How do I receive my tickets?
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
               After purchase, you’ll receive an email with a digital ticket QR code for entry.
-              </div>
+            </div>
           </li>
-           <!--Question 4-->
+          <!--Question 4-->
           <li class="FAQset">
             <button class="FAQques">
               Can I buy tickets at the gate?
@@ -175,7 +284,7 @@
             </button>
             <div class="FAQans">
               Yes, if the event isn’t sold out, limited gate tickets will be available.
-              </div>
+            </div>
           </li>
         </div>
 
@@ -185,11 +294,12 @@
           <!--Question 1-->
           <li class="FAQset">
             <button class="FAQques">
-               Is there parking available?
+              Is there parking available?
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              Yes, limited paid parking is available near Stanley Park, you can purchase parking pass along with your ticket.
+              Yes, limited paid parking is available near Stanley Park, you can purchase parking pass along with your
+              ticket.
             </div>
           </li>
           <!--Question 2-->
@@ -199,7 +309,8 @@
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              You can reach the festival by bus, SkyTrain, bike, or on foot. Visit the <a href="https://maps.app.goo.gl/5QfKU7AXtKvR31pS9">Getting Here</a> for detailed routes.
+              You can reach the festival by bus, SkyTrain, bike, or on foot. Visit the <a
+                href="https://maps.app.goo.gl/5QfKU7AXtKvR31pS9">Getting Here</a> for detailed routes.
             </div>
           </li>
           <!--Question 3-->
@@ -209,7 +320,8 @@
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              Several partner hotels offer discounted festival packages. Check the <a>Partners section</a> for recommendations.
+              Several partner hotels offer discounted festival packages. Check the <a>Partners section</a> for
+              recommendations.
             </div>
           </li>
         </div>
@@ -224,7 +336,8 @@
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              Yes, Pacific Pulse provides accessible viewing areas, pathways, and restrooms. Please see <a href="experience.html">Experience</a> for details.
+              Yes, Pacific Pulse provides accessible viewing areas, pathways, and restrooms. Please see <a
+                href="experience.html">Experience</a> for details.
             </div>
           </li>
           <!--Question 2-->
@@ -234,7 +347,8 @@
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              Definitely! Many vendors offer vegan, vegetarian, and gluten-free meals. You can preview options on the <a href="experience.html">Experience</a> page.
+              Definitely! Many vendors offer vegan, vegetarian, and gluten-free meals. You can preview options on the <a
+                href="experience.html">Experience</a> page.
             </div>
           </li>
           <!--Question 3-->
@@ -244,9 +358,10 @@
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              Outside food and drinks are not permitted, but refillable water bottles are welcome, free water stations will be available on site.
+              Outside food and drinks are not permitted, but refillable water bottles are welcome, free water stations
+              will be available on site.
           </li>
-      </div>
+        </div>
 
         <!--Venue & Safety-->
         <div class="FAQ">
@@ -258,7 +373,8 @@
               <span class="faq-toggle-icon">+</span>
             </button>
             <div class="FAQans">
-              No weapons, illegal substances, glass containers, or drones. See our <a href="">Festival Rules</a> for the complete list.
+              No weapons, illegal substances, glass containers, or drones. See our <a href="">Festival Rules</a> for the
+              complete list.
             </div>
           </li>
           <!--Question 2-->
@@ -280,77 +396,78 @@
             <div class="FAQans">
               Yes, first aid stations are available at multiple locations, clearly marked on the <a>Venue Map</a>.
           </li>
-      </div>
+        </div>
     </section>
-    </main>
+  </main>
 
-    <!--Footer-->
-        <!-- FOOTER -->
+  <!--Footer-->
+  <!-- FOOTER -->
   <footer>
-  <div class="footer-container">
-    <div class="footer-columns">
-      <div class="footer-column">
-        <h3>FESTIVAL</h3>
-        <ul>
-          <li><a href="#">Tickets</a></li>
-          <li><a href="#">About the Festival</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
+    <div class="footer-container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>FESTIVAL</h3>
+          <ul>
+            <li><a href="#">Tickets</a></li>
+            <li><a href="#">About the Festival</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>EXPLORE</h3>
+          <ul>
+            <li><a href="#">Stages</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">Lineup</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>INFO</h3>
+          <ul>
+            <li><a href="#">Plan Your Journey</a></li>
+            <li><a href="#">Getting Here</a></li>
+            <li><a href="#">Festival Map</a></li>
+            <li><a href="#">Parking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>CONTACT</h3>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-column">
-        <h3>EXPLORE</h3>
-        <ul>
-          <li><a href="#">Stages</a></li>
-          <li><a href="#">Experiences</a></li>
-          <li><a href="#">Lineup</a></li>
-          <li><a href="#">About Us</a></li>
-        </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
 
-      <div class="footer-column">
-        <h3>INFO</h3>
-        <ul>
-          <li><a href="#">Plan Your Journey</a></li>
-          <li><a href="#">Getting Here</a></li>
-          <li><a href="#">Festival Map</a></li>
-          <li><a href="#">Parking</a></li>
-        </ul>
-      </div>
+      <hr class="footer-divider">
 
-      <div class="footer-column">
-        <h3>CONTACT</h3>
-        <ul>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Cookie Policy</a></li>
-        </ul>
+      <div class="copyright">
+        <p>&copy; 2025 Pacific Pulse. All rights reserved.</p>
       </div>
     </div>
+  </footer>
+  <script>
+    let faqItems = document.querySelectorAll('.FAQset');
 
-    <div class="social-icons">
-      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="#"><i class="fa-brands fa-youtube"></i></a>
-    </div>
+    faqItems.forEach(item => {
+      let question = item.querySelector('.FAQques');
+      question.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
 
-    <hr class="footer-divider">
-
-    <div class="copyright">
-      <p>&copy; 2025 Pacific Pulse. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-<script>
-let faqItems = document.querySelectorAll('.FAQset');
-
-faqItems.forEach(item => {
-  let question = item.querySelector('.FAQques');
-  question.addEventListener('click', () => {
-    item.classList.toggle('active');
-  });
-});
-</script>
 </html>
