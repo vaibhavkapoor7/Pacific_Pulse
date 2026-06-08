@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacific Pulse - Lineup</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/lineup.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
+  <script src="https://kit.fontawesome.com/bcab9e1cd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/Logo.png" alt="Pacific Pulse Logo"></a>
+      </div>
+
+      <div class="nav-links-buttons">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lineup.html">Lineup</a></li>
+          <li><a href="experience.html">Experiences</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+          <button class="login">Login</button>
+          <button class="tickets">
+            <a href="tickets.html">
+              Get Tickets
+            </a>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <!-- start of the page -->
+    <section class="lineup-header">
+      <h1 class="lineup-title">2026 LINEUP</h1>
+      <p class="lineup-subtitle">
+        Catch performances from Carter White, TideBreakers, Roan, and more of your favorite indie, country, and alt-rock
+        artists lighting up the Main Stage against Vancouver’s stunning skyline.
+      </p>
+    </section>
+
+    <!-- start of lineup cards -->
+    <section class="lineup">
+      <div class="day-summary" id="day1-summary" style="display: none;">
+        <p>
+          Kicking things off on August 21, country star Carter White (11:00am) opens with heartfelt ballads and southern
+          charm, followed by the raw energy of Indigo’s alternative rock (1:30pm). Joelle’s dreamy indie pop (3:00pm)
+          sets the mood for the evening, leading into Denim Lace (5:30pm), whose gritty riffs close the night with
+          nostalgic alt-rock fire.
+        </p>
+      </div>
+      <div class="day-summary" id="day2-summary" style="display: none;">
+        <p>
+          On August 22, the soulful Tidebreakers (1:30pm) bring warmth and harmony, before Atlas (3:00pm) fills the air
+          with lush indie-pop soundscapes. The thunderous Roan (4:30pm) ignites the stage with alt-rock power, and Hole$
+          (7:15pm) wrap up the day with infectious synth-driven energy.
+        </p>
+      </div>
+      <div class="day-summary" id="day3-summary" style="display: none;">
+        <p>
+          The festival’s final day, August 23, showcases emerging country star Bloom (12:00pm), followed by veteran
+          alt-rockers Break (2:00pm). Trinity (5:00pm) deliver roots-driven harmonies before Hippocamp (7:00pm) close
+          the weekend with their adventurous, genre-bending country sound.
+        </p>
+      </div>
+      <div class="filter-bar">
+        <!-- added in the filter buttons for different days -->
+        <span class="filter-label">FILTERS:</span>
+        <div class="filter-btn-group">
+          <button class="filter-btn active" onclick="selectFilter(this); filterContent('all')">All</button>
+          <button class="filter-btn" onclick="selectFilter(this); filterContent('day1')">Day 1</button>
+          <button class="filter-btn" onclick="selectFilter(this); filterContent('day2')">Day 2</button>
+          <button class="filter-btn" onclick="selectFilter(this); filterContent('day3')">Day 3</button>
+        </div>
+      </div>
+      <!-- ===  DAY 1 ARTISTS  === -->
+      <!-- Carter White -->
+      <div class="artist-grid">
+        <div class="artist-card" data-category="day1">
+          <div class="artist-media"><img src="images/carter-white.png" alt="carter white" class="artist-image"
+              loading="lazy" decoding="async"></div>
+
+          <div class="artist-info">
+            <div class="top-row">
+              <p class="artist-date">
+                August 21st, 2026
+              </p>
+              <button class="calendar-icon" title="Add to calendar">
+                <i class="fa-solid fa-calendar-plus add-calendar"></i>
+              </button>
+            </div>
+            <h3 class="artist-name">CARTER WHITE</h3>
+            <div class="artist-tags">
+              <span class="tag time">07:00PM</span>
+              <span class="tag stage">MAIN STAGE</span>
+            </div>
+            <p class="artist-bio">
+              At 30 years old, Carter White has become one of the freshest faces of modern country. Known for heartfelt
+              ballads and high-energy stage charisma, he blends traditional southern twang with contemporary
+              storytelling.
+            </p>
+          </div>
+        </div>
+        <!-- Indigo -->
+        <div class="artist-card" data-category="day1">
+          <div class="artist-media"><img src="images/indigo.webp" alt="indigo" class="artist-image" loading="lazy"
+              decoding="async"></div>
+
+          <div class="artist-info">
+
+            <div class="top-row">
+              <p class="artist-date">
+                August 21st, 2026
+              </p>
+              <button class="calendar-icon" title="Add to calendar">
+                <i class="fa-solid fa-calendar-plus add-calendar"></i>
+              </button>
+            </div>
+            <h3 class="artist-name">INDIGO</h3>
+            <div class="artist-tags">
+              <span class="tag time">01:30PM</span>
+              <span class="tag stage">MAIN STAGE</span>
+            </div>
+            <p class="artist-bio">
+              At just 21, Indigo is an up-and-coming force in the alternative rock scene. With raw lyrics and a moody
+              soundscape, Indigo channels youthful energy and vulnerability into every performance, earning a
+              fast-growing fan base.
+            </p>
+          </div>
+        </div>
+        <!-- Joelle -->
+        <div class="artist-card" data-category="day1">
+          <div class="artist-media"><img src="images/joelle.webp" alt="joelle" class="artist-image" loading="lazy"
+              decoding="async"></div>
+
+          <div class="artist-info">
+
+            <div class="top-row">
+              <p class="artist-date">
+                August 21st, 2026
+              </p>
+              <button class="calendar-icon" title="Add to calendar">
+                <i class="fa-solid fa-calendar-plus add-calendar"></i>
+              </button>
+            </div>
+            <h3 class="artist-name">JOELLE</h3>
+            <div class="artist-tags">
+              <span class="tag time">03:00PM</span>
+              <span class="tag stage">MAIN STAGE</span>
+            </div>
+            <p class="artist-bio">
+              Joelle brings dreamy indie-pop melodies layered with intimate lyricism. Her soulful vocals and playful
+              beats make her a must-watch artist on the rise, drawing comparisons to festival darlings while carving her
+              own sound.
+            </p>
+          </div>
+        </div>
+        <!-- Denim Lace -->
+        <div class="artist-card" data-category="day1">
+          <div class="artist-media"><img src="images/denim-lace.webp" alt="Denim Lace" class="artist-image"
+              loading="lazy" decoding="async"></div>
+
+          <div class="artist-info">
+
+            <div class="top-row">
+              <p class="artist-date">
+                August 21st, 2026
+              </p>
+              <button class="calendar-icon" title="Add to calendar">
+                <i class="fa-solid fa-calendar-plus add-calendar"></i>
+              </button>
+            </div>
+            <h3 class="artist-name">Denim Lace</h3>
+            <div class="artist-tags">
+              <span class="tag time">03:00PM</span>
+              <span class="tag stage">MAIN STAGE</span>
+            </div>
+            <p class="artist-bio">
+              This electrifying band delivers gritty riffs and unforgettable hooks. Denim Lace thrives on live energy,
+              channeling 2000s alternative nostalgia while staying fiercely modern and authentic.
+            </p>
+          </div>
+        </div>
+
+        <!-- ===  DAY 2 ARTISTS  === -->
+        <!-- Tidebreakers -->
+        <div class="artist-card" data-category="day2">
+          <div class="artist-media"><img src="images/tidebreakers.webp" alt="Tidebreakers" class="artist-image"
+              loading="lazy" decoding="async"></div>
+
+          <div class="artist-info">
+
+            <div class="top-row">
+              <p class="artist-date">
+                August 22nd, 2026
+              </p>
+              <button class="calendar-icon" title="Add to calendar">
+                <i class="fa-solid fa-calendar-plus add-calendar"></i>
+              </button>
+            </div>
+            <h3 class="artist-name">TIDEBREAKERS</h3>
+            <div class="artist-tags">
+              <span class="tag time">01:30PM</span>
+              <span class="tag stage">MAIN STAGE</span>
+            </div>
+            <p class="artist-bio">
+              Beloved by fans ages 19-25, Tidebreakers fuse country warmth with soulful harmonies. Their empowering,
+              vibrant performances make them one of the most exciting young bands today.
+            </p>
+          </div>
+        </div>
+        <!-- Atlas -->
+        <div class="artist-card" data-category="day2">
+          <div class="artist-media"><img src="images/atlas.webp" alt="atlas" class="artist-image" loading="lazy"
+              decoding="async"></div>
+
+          <div class="artist-info">
+
+            <div class="top-row">
+              <p class="artist-date">
+                August 22nd, 2026
+              </p>
+              <button class="calendar-icon" title="Add to calendar">
+                <i class="fa-solid fa-calendar-plus add-calendar"></i>
+              </button>
+            </div>
+            <h3 class="artist-name">ATLAS</h3>
+            <div class="artist-tags">
+              <span class="tag time">03:00PM</span>
+              <span class="tag stage">MAIN STAGE</span>
+            </div>
+            <p class="artist-bio">
+              At 26, Atlas is already a star in the indie scene. Known for lush soundscapes and emotionally charged
+              choruses, Atlas crafts songs that feel both deeply personal and universally relatable.
+            </p>
+          </div>
+        </div>
+        <!-- Roan -->
+        <div class="artist-card" data-category="day2">
+          <div class="artist-media"><img src="images/Roan.png" alt="roan" class="artist-image" loading="lazy"
+              decoding="async"></div>
+
+          <div class="artist-info">
+
+            <div class="top-row">
+              <p class="artist-date">
+                August 22nd, 2026
+              </p>
+              <button class="calendar-icon" title="Add to calendar">
+                <i class="fa-solid fa-calendar-plus add-calendar"></i>
+              </button>
+            </div>
+            <h3 class="artist-name">ROAN</h3>
+            <div class="artist-tags">
+              <span class="tag time">04:30PM</span>
+              <span class="tag stage">MAIN STAGE</span>
+            </div>
+            <p class="artist-bio">
+              This boundary-pushing indie-pop band is defined by synth-heavy beats and lyrical wit. Known for their
+              energetic live sets, Hole$ bring infectious fun to every festival stage.
+            </p>
+          </div>
+        </div>
+        <!-- Hole$ -->
+        <div class="artist-card" data-category="day2">
+          <div class="artist-media"><img src="images/hole$.png" alt="Hole$" class="artist-image" loading="lazy"
+              decoding="async"></div>
+
+          <div class="artist-info">
+
+            <div class="top-row">
+              <p class="artist-date">
+                August 22nd, 2026
+              </p>
+              <button class="calendar-icon" title="Add to calendar">
+                <i class="fa-solid fa-calendar-plus add-calendar"></i>
+              </button>
+            </div>
+            <h3 class="artist-name">HOLE$</h3>
+            <div class="artist-tags">
+              <span class="tag time">07:15PM</span>
+              <span class="tag stage">MAIN STAGE</span>
+            </div>
+            <p class="artist-bio">
+              This boundary-pushing indie-pop band is defined by synth-heavy beats and lyrical wit. Known for their
+              energetic live sets, Hole$ bring infectious fun to every festival stage.
+            </p>
+          </div>
+        </div>
+        <!-- ===  DAY 3 ARTISTS  === -->
+        <!-- Bloom -->
+        <div class="artist-card" data-category="day3">
+          <div class="artist-media"><img src="images/bloom.webp" alt="Bloom" class="artist-image" loading="lazy"
+              decoding="async"></div>
+
+          <div class="artist-info">
+
+            <div class="top-row">
+              <p class="artist-date">
+                August 23rd, 2026
+              </p>
+              <button class="calendar-icon" title="Add to calendar">
+                <i class="fa-solid fa-calendar-plus add-calendar"></i>
+              </button>
+            </div>
+            <h3 class="artist-name">BLOOM</h3>
+            <div class="artist-tags">
+              <span class="tag time">12:00PM</span>
+              <span class="tag stage">MAIN STAGE</span>
+            </div>
+            <p class="artist-bio">
+              At 23, Bloom shines as an acoustic country storyteller. With a warm voice and heartfelt songwriting. Bloom
+              captures the intimacy of the genre while appealing to younger fans.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Break -->
+      <!-- Trinity -->
+      <!-- Hipocamp -->
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>FESTIVAL</h3>
+          <ul>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="#">About the Festival</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>EXPLORE</h3>
+          <ul>
+            <li><a href="#">Stages</a></li>
+            <li><a href="experience.html">Experiences</a></li>
+            <li><a href="lineup.html">Lineup</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>INFO</h3>
+          <ul>
+            <li><a href="#">Plan Your Journey</a></li>
+            <li><a href="#">Getting Here</a></li>
+            <li><a href="#">Festival Map</a></li>
+            <li><a href="#">Parking</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>CONTACT</h3>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <hr class="footer-divider">
+
+      <div class="copyright">
+        <p>&copy; 2025 Pacific Pulse. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+
+</html>

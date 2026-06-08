@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacific Pulse - Checkout</title>
+
+
+    <!-- CSS base -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/tickets-flow3.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jkh1hzt.css">
+    <script src="https://kit.fontawesome.com/bcab9e1cd0.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+        <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/Logo.png" alt="Pacific Pulse Logo"></a>
+        </div>
+
+        <div class="nav-links-buttons">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lineup.html">Lineup</a></li>
+            <li><a href="experience.html">Experiences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-buttons">
+            <button class="login">Login</button>
+            <button class="tickets">
+              <a href="tickets.html">
+                Get Tickets
+              </a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- ===== HERO ===== -->
+    <main>
+      <section class="hero">
+        <h1>Tickets</h1>
+        <p>We need more details from you to complete your order.</p>
+      </section>
+
+
+      <!-- ===== CHECKOUT LAYOUT ===== -->
+      <section class="section checkout" aria-labelledby="checkout_title">
+        <h2 id="checkout_title" class="visually-hidden">Checkout</h2>
+
+
+        <div class="co-grid">
+          <!-- LEFT: FORM -->
+          <form class="co-card co-form" novalidate>
+            <div class="co-field-row">
+              <label class="co-field">
+                <span>First Name *</span>
+                <input type="text" placeholder="Sam" required>
+              </label>
+
+
+              <label class="co-field">
+                <span>Last Name *</span>
+                <input type="text" placeholder="Smith" required>
+              </label>
+            </div>
+
+
+            <label class="co-field">
+              <span>Email *</span>
+              <input type="email" placeholder="sam@email.com" required>
+            </label>
+
+
+            <label class="co-field">
+              <span>Phone Number (optional)</span>
+              <input type="tel" placeholder="+1 (000) 000-0000" inputmode="tel">
+            </label>
+
+
+            <div class="co-checkboxes">
+              <label class="co-check">
+                <input type="checkbox">
+                <span>I have an accessibility need</span>
+              </label>
+              <label class="co-check">
+                <input type="checkbox" checked>
+                <span>Send me email about the updates of the event</span>
+              </label>
+            </div>
+
+
+            <hr class="co-divider">
+            <h4 class="co-subtitle">Payment Method</h4>
+
+            <div class="co-field-row">
+              <label class="co-field">
+                <span>Cardholder First Name *</span>
+                <input type="text" placeholder="Sam" required>
+              </label>
+              <label class="co-field">
+                <span>Cardholder Last Name *</span>
+                <input type="text" placeholder="Smith" required>
+              </label>
+            </div>
+
+
+            <label class="co-field">
+              <span>Card Number *</span>
+              <input type="text" inputmode="numeric" placeholder="4242 4242 4242 4242" required>
+            </label>
+
+
+            <div class="co-field-row">
+              <label class="co-field">
+                <span>Expiry *</span>
+                <input type="text" inputmode="numeric" placeholder="MM/YY" required>
+              </label>
+              <label class="co-field">
+                <span>CVC *</span>
+                <input type="text" inputmode="numeric" placeholder="123" required>
+              </label>
+              <label class="co-field">
+                <span>ZIP/Postal *</span>
+                <input type="text" placeholder="12345" required>
+              </label>
+            </div>
+            <div class="check-out-sect">
+            <a type="submit" class="btn" href="tickets-flow4.html">Confirm &amp; Pay</a>
+            <a href="tickets-flow2.html" class="co-back">← Back to Add-on</a>
+            </div>
+          </form>
+
+
+          <!-- RIGHT: ORDER SUMMARY -->
+          <aside class="co-card co-summary" aria-label="Order Summary">
+            <h3 class="co-title">Order Summary</h3>
+
+
+            <ul class="sum-list" role="list">
+              <li class="sum-item">
+                <div class="sum-lines">
+                  <span class="sum-skel"></span>
+                  <span class="sum-skel short"></span>
+                  <span class="sum-skel shorter"></span>
+                </div>
+                <span class="sum-price">$225</span>
+              </li>
+
+
+              <li class="sum-item">
+                <div class="sum-lines">
+                  <span class="sum-skel"></span>
+                  <span class="sum-skel short"></span>
+                </div>
+                <span class="sum-price">$30</span>
+              </li>
+
+
+              <li class="sum-item">
+                <div class="sum-lines">
+                  <span class="sum-skel"></span>
+                </div>
+                <span class="sum-price">$15</span>
+              </li>
+            </ul>
+            <hr class="co-divider">
+
+
+            <div class="sum-rows">
+              <div class="sum-row">
+                <span>Taxes</span>
+                <span class="sum-price">$18</span>
+              </div>
+              <div class="sum-row">
+                <span>Subtotals</span>
+                <span class="sum-price">$270</span>
+              </div>
+              <div class="sum-row sum-total">
+                <span>Totals</span>
+                <span class="sum-price">$288</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>FESTIVAL</h3>
+            <ul>
+              <li><a href="#">Tickets</a></li>
+              <li><a href="#">About the Festival</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+
+          <div class="footer-column">
+            <h3>EXPLORE</h3>
+            <ul>
+              <li><a href="#">Stages</a></li>
+              <li><a href="#">Experiences</a></li>
+              <li><a href="#">Lineup</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+
+
+          <div class="footer-column">
+            <h3>INFO</h3>
+            <ul>
+              <li><a href="#">Plan Your Journey</a></li>
+              <li><a href="#">Getting Here</a></li>
+              <li><a href="#">Festival Map</a></li>
+              <li><a href="#">Parking</a></li>
+            </ul>
+          </div>
+
+
+          <div class="footer-column">
+            <h3>CONTACT</h3>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+
+        <hr class="footer-divider">
+        <div class="copyright">
+          <p>&copy; 2025 Pacific Pulse. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
