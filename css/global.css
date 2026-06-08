@@ -1,12 +1,4 @@
 :root {
-  /* ====== ROOT CSS RESET ====== */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  /* ====== ROOT COLORS & FONTS ====== */
   --lgt-cream: #f5ebd8;
   --drk-green: #545b37;
   --blue: #43859c;
@@ -15,33 +7,38 @@
   --lgt-green: #b0bba2;
   --fisterra: "fisterra-morte", sans-serif;
   --antartican: "antarctican-headline", sans-serif;
+}
 
-  /* ====== HEADER ====== */
-  header {
-    background-color: var(--lgt-cream);
-    border-bottom: 0.5px solid black;
-    padding: 0 1rem;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* ====== NAVBAR ====== */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    min-height: 80px;
-    padding-left: 180px;
-  }
+header {
+  background-color: var(--lgt-cream);
+  border-bottom: 0.5px solid black;
+  padding: 0 1rem;
+}
 
-  .logo img {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 150px;
-    width: auto;
-    z-index: 1;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 80px;
+  padding-left: 180px;
+}
+
+.logo img {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 150px;
+  width: auto;
+  z-index: 1;
+}
 
   /* ====== BUTTON CONTAINER  ====== */
   .nav-links-buttons {
@@ -291,4 +288,3 @@
       grid-template-columns: 1fr;
     }
   }
-}
